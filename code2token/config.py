@@ -2,7 +2,10 @@ ROOT_PATH = "/scratch/data/java_method_token/"
 
 TOKEN_TYPES = {
     "value": "token_value",
-    "kind": "token_kind"
+    "kind": "token_kind",
+    "xalnum": "token_xalnum",
+    "literal": "method_literal",
+    "xliteral": "method_xliteral"
 }
 
 DB_NAMES = {

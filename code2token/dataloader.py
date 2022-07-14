@@ -14,6 +14,12 @@ def get_input_token(all_tokens, token_type):
         input_token = [_todo_(t[0]) for t in all_tokens]
     elif token_type == cf.TOKEN_TYPES["kind"]:
         input_token = [_todo_(t[1]) for t in all_tokens]
+    elif token_type == cf.TOKEN_TYPES["xalnum"]:
+        input_token = [''.join(['x' if c.isalnum() else c for c in _todo_(t[0])]) for t in all_tokens]
+    elif token_type in [cf.TOKEN_TYPES["literal"], cf.TOKEN_TYPES["xliteral"]]:
+        input_token = [_todo_(t[1]) if "_LITERAL" in t[1] else _todo_(t[0]) for t in all_tokens]
+        if token_type == cf.TOKEN_TYPES["xliteral"]:
+            input_token = [''.join(['x' if c.isalnum() else c for c in t]) for t in input_token]
     return input_token
 
 
