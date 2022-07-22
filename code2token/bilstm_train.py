@@ -1,5 +1,6 @@
 import os
 import pathlib
+import sys
 import time
 
 import torch
@@ -81,28 +82,32 @@ def evaluate(dataloader, model):
     return (total_acc / total_count) * 100, (total_loss / total_count) * 100
 
 
+# Args
+args = sys.argv
+curr_db_name, curr_tok_type = args[1], args[2]
+
 # Device
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("device = {}".format(device))
 
 # Vocabulary
-lookup_train_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[cf.DB_NAME], cf.PARTITIONS["train"])
-lookup_val_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[cf.DB_NAME], cf.PARTITIONS["val"])
-token_vocab = get_token_vocab([lookup_train_path, lookup_val_path], cf.TOKEN_TYPES[cf.TOKEN_TYPE])
+lookup_train_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[curr_db_name], cf.PARTITIONS["train"])
+lookup_val_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[curr_db_name], cf.PARTITIONS["val"])
+token_vocab = get_token_vocab([lookup_train_path, lookup_val_path], cf.TOKEN_TYPES[curr_tok_type])
 print("vocab = #{}".format(len(token_vocab[0])))
 
 # DataLoader
-train_set = CodeTokenDataset(lookup_train_path, cf.TOKEN_TYPES[cf.TOKEN_TYPE], token_vocab, None)
+train_set = CodeTokenDataset(lookup_train_path, cf.TOKEN_TYPES[curr_tok_type], token_vocab, None)
 top_labels = train_set.get_top_labels()  # required for label2index/index2label mapping
 train_loader = DataLoader(train_set, batch_size=cf.BATCH_SIZE, shuffle=True, collate_fn=collate_batch)
 print("train_set = #{}".format(len(train_set)))
-val_set = CodeTokenDataset(lookup_val_path, cf.TOKEN_TYPES[cf.TOKEN_TYPE], token_vocab, top_labels)
+val_set = CodeTokenDataset(lookup_val_path, cf.TOKEN_TYPES[curr_tok_type], token_vocab, top_labels)
 val_loader = DataLoader(val_set, batch_size=cf.BATCH_SIZE, shuffle=False, collate_fn=collate_batch)
 print("val_set = #{}".format(len(val_set)))
 
 # Params
-model_best_file = "/scratch/models/code2token/{}/{}_lstm_best.pth".format(cf.TOKEN_TYPE, cf.DB_NAME)
-log_test_file = "/scratch/models/code2token/{}/{}_lstm_test.csv".format(cf.TOKEN_TYPE, cf.DB_NAME)
+model_best_file = '/scratch/models/code2token/{}/{}_lstm_best.pth'.format(curr_tok_type, curr_db_name)
+log_test_file = '/scratch/models/code2token/{}/{}_lstm_test.csv'.format(curr_tok_type, curr_db_name)
 lstm_model = BiLSTMModel(len(token_vocab[0]), len(top_labels)).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(lstm_model.parameters(), lr=cf.LEARNING_RATE)
@@ -148,8 +153,8 @@ lstm_model.eval()
 print("Loaded best model from {}".format(model_best_file))
 
 # Test Dataloader
-lookup_test_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[cf.DB_NAME], cf.PARTITIONS["test"])
-test_set = CodeTokenDataset(lookup_test_path, cf.TOKEN_TYPES[cf.TOKEN_TYPE], token_vocab, top_labels)
+lookup_test_path = "{}/{}/{}.json".format(cf.ROOT_PATH, cf.DB_NAMES[curr_db_name], cf.PARTITIONS["test"])
+test_set = CodeTokenDataset(lookup_test_path, cf.TOKEN_TYPES[curr_tok_type], token_vocab, top_labels)
 test_loader = DataLoader(test_set, batch_size=cf.BATCH_SIZE, shuffle=False, collate_fn=collate_batch)
 print("test_set = #{}".format(len(test_set)))
 
