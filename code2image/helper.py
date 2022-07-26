@@ -1,9 +1,12 @@
 import pathlib
+import subprocess
 
 ROOT_PATH = "/scratch/deployment/code-image/"
 SRC_PATH = "/scratch/data/java_method_raw/"
 IMG_PATH = "/scratch/data/java_method_img/{}/"
 DEF_FONT_PATH = ROOT_PATH + "/others/default.ttf"
+
+JAR_JAVA_METHOD = ROOT_PATH + "/JavaLoader/target/jar/JavaLoader.jar"
 
 METHOD_MASK = "METHOD_NAME"
 
@@ -21,3 +24,9 @@ def get_method_stats(src_fie, code_txt):
     code_txt = code_txt.split('\n')
     max_l, max_w = len(code_txt), len(max(code_txt, key=len))
     return [max_l, max_w]
+
+
+def get_method_body(src_file):
+    cmd = ['java', '-jar', JAR_JAVA_METHOD, src_file]
+    contents = subprocess.check_output(cmd, encoding="utf-8", close_fds=True)
+    return str(contents).strip()
