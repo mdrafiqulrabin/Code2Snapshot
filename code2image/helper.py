@@ -14,6 +14,9 @@ SRC_EXT = ".java"
 IMG_EXT = ".png"
 IMG_MODE = "L"
 
+MAX_WIDTH = 120
+MAX_LENGTH = 30
+
 DATABASE = ["java-top10", "java-top50"]
 PARTITIONS = ["training", "validation", "test"]
 
