@@ -1,5 +1,6 @@
 import pathlib
 import subprocess
+import json
 
 ROOT_PATH = "/scratch/deployment/code-image/"
 SRC_PATH = "/scratch/data/java_method_raw/"
@@ -7,6 +8,7 @@ IMG_PATH = "/scratch/data/java_method_img/{}/"
 DEF_FONT_PATH = ROOT_PATH + "/others/default.ttf"
 
 JAR_JAVA_METHOD = ROOT_PATH + "/JavaLoader/target/jar/JavaLoader.jar"
+JAR_JAVA_TOKENIZER = ROOT_PATH + "/JavaTokenizer/target/jar/JavaTokenizer.jar"
 
 METHOD_MASK = "METHOD_NAME"
 
@@ -33,3 +35,18 @@ def get_method_body(src_file):
     cmd = ['java', '-jar', JAR_JAVA_METHOD, src_file]
     contents = subprocess.check_output(cmd, encoding="utf-8", close_fds=True)
     return str(contents).strip()
+
+
+def get_method_token(src_file):
+    cmd = ['java', '-jar', JAR_JAVA_TOKENIZER, src_file]
+    contents = subprocess.check_output(cmd, encoding="utf-8", close_fds=True)
+    contents = json.loads(str(contents).strip())
+    return contents["tokens"]
+
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
