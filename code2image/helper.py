@@ -50,3 +50,11 @@ def is_number(s):
         return True
     except ValueError:
         return False
+
+
+def get_xalnum(m_code):
+    code_x = []
+    for code_t in m_code.split(METHOD_MASK):
+        code_p = ''.join(['x' if c.isalnum() else c for c in code_t])
+        code_x.append(code_p)
+    return METHOD_MASK.join(code_x)
