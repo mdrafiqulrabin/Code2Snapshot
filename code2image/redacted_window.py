@@ -8,13 +8,13 @@ import helper as hp
 
 def save_image(src_file):
     code_txt = hp.get_method_body(src_file)
-    code_l, code_w = hp.get_method_stats(None, code_txt)
-    img_h, img_w = (code_l + 1) * 70, (code_w + 1) * 23
+    code_txt = hp.get_xalnum(code_txt)
+    img_h, img_w = (hp.MAX_LENGTH + 1) * 70, (hp.MAX_WIDTH + 1) * 23
     img = Image.new(mode=hp.IMG_MODE, size=(img_w, img_h), color="#FFFFFF")
     draw = ImageDraw.Draw(img)
     fnt = ImageFont.truetype(font=hp.DEF_FONT_PATH, size=50)
     draw.text(xy=(25, 50), text=code_txt, spacing=50, font=fnt, fill="black")
-    img_file = str(src_file).replace(hp.SRC_PATH, hp.IMG_PATH.format("reformat_methods")) \
+    img_file = str(src_file).replace(hp.SRC_PATH, hp.IMG_PATH.format("redacted_window_methods")) \
         .replace(hp.SRC_EXT, hp.IMG_EXT)
     if not pathlib.Path(img_file).is_file():
         pathlib.Path(os.path.dirname(img_file)).mkdir(parents=True, exist_ok=True)

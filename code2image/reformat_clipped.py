@@ -15,7 +15,7 @@ def save_image(src_file):
     draw = ImageDraw.Draw(img)
     fnt = ImageFont.truetype(font=hp.DEF_FONT_PATH, size=50)
     draw.text(xy=(25, 50), text=code_txt, spacing=50, font=fnt, fill="black")
-    img_file = str(src_file).replace(hp.SRC_PATH, hp.IMG_PATH.format("clipped_methods")) \
+    img_file = str(src_file).replace(hp.SRC_PATH, hp.IMG_PATH.format("reformat_clipped_methods")) \
         .replace(hp.SRC_EXT, hp.IMG_EXT)
     if not pathlib.Path(img_file).is_file():
         pathlib.Path(os.path.dirname(img_file)).mkdir(parents=True, exist_ok=True)
