@@ -21,12 +21,25 @@ PARTITIONS = {
     "test": "test"
 }
 
+SIZE_PARAMS = {
+    32: 576,
+    64: 3136,
+    128: 14400,
+    256: 61504,
+    512: 254016,
+    1024: 1032256
+}
+
 # Modify (If)
 IMG_TYPE = "redacted"
 DB_NAME = "java-top10"
 
 IMG_MODE = "L"
 IMG_EXT = ".png"
-IMG_TRANS_SIZE = 1024  # 32
+IMG_TRANS_SIZE = 512
 
+# Params
 NUM_WORKER = 2
+BATCH_SIZE = 64
+MAX_EPOCH = 100
+EARLY_LIMIT = 20
