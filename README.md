@@ -1,4 +1,4 @@
 ## Encoding Program as Image
 
-This repository is for our paper [Encoding Program as Image: Evaluating Visual Representation of Source Code](https://doi.org/10.48550/arXiv.2111.01097).
+This repository data of our paper [Code2Snapshot: Using Code Snapshots for Learning Representations of Source Code](https://doi.org/10.48550/arXiv.2111.01097).
 
