@@ -1,0 +1,8 @@
+
+DataLoader: https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader
+> https://pytorch.org/tutorials/beginner/text_sentiment_ngrams_tutorial.html
+> https://github.com/pytorch/tutorials/blob/main/beginner_source/text_sentiment_ngrams_tutorial.py
+
+LSTM: https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
+> https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html
+> https://github.com/pytorch/tutorials/blob/main/beginner_source/nlp/sequence_models_tutorial.py

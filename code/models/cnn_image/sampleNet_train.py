@@ -41,6 +41,7 @@ print("\ndevice = {}\n".format(device))
 
 
 # ------------- Sample Net -------------
+# todo: replace with AlexNet/RestNet model class (refs.txt)
 class SampleNet(nn.Module):
     def __init__(self):
         super().__init__()
