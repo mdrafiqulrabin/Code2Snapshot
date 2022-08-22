@@ -113,3 +113,117 @@ Total Trainable Params: 2019722
 
 
 ***************************************
+
+
+top50 - kind
+device = cuda:0
+vocab = #96
+train_set = #27119
+val_set = #1803
+total_params = 684594
+total_trainable = 684594
+
+
++---------------------------+------------+
+|          Modules          | Parameters |
++---------------------------+------------+
+|      embedding.weight     |   12288    |
+|     lstm.weight_ih_l0     |   65536    |
+|     lstm.weight_hh_l0     |   65536    |
+|      lstm.bias_ih_l0      |    512     |
+|      lstm.bias_hh_l0      |    512     |
+| lstm.weight_ih_l0_reverse |   65536    |
+| lstm.weight_hh_l0_reverse |   65536    |
+|  lstm.bias_ih_l0_reverse  |    512     |
+|  lstm.bias_hh_l0_reverse  |    512     |
+|     lstm.weight_ih_l1     |   131072   |
+|     lstm.weight_hh_l1     |   65536    |
+|      lstm.bias_ih_l1      |    512     |
+|      lstm.bias_hh_l1      |    512     |
+| lstm.weight_ih_l1_reverse |   131072   |
+| lstm.weight_hh_l1_reverse |   65536    |
+|  lstm.bias_ih_l1_reverse  |    512     |
+|  lstm.bias_hh_l1_reverse  |    512     |
+|         fc.weight         |   12800    |
+|          fc.bias          |     50     |
++---------------------------+------------+
+Total Trainable Params: 684594
+
+
+***************************************
+
+
+top50 - value
+device = cuda:0
+vocab = #87011
+train_set = #27119
+val_set = #1803
+total_params = 11809714
+total_trainable = 11809714
+
+
++---------------------------+------------+
+|          Modules          | Parameters |
++---------------------------+------------+
+|      embedding.weight     |  11137408  |
+|     lstm.weight_ih_l0     |   65536    |
+|     lstm.weight_hh_l0     |   65536    |
+|      lstm.bias_ih_l0      |    512     |
+|      lstm.bias_hh_l0      |    512     |
+| lstm.weight_ih_l0_reverse |   65536    |
+| lstm.weight_hh_l0_reverse |   65536    |
+|  lstm.bias_ih_l0_reverse  |    512     |
+|  lstm.bias_hh_l0_reverse  |    512     |
+|     lstm.weight_ih_l1     |   131072   |
+|     lstm.weight_hh_l1     |   65536    |
+|      lstm.bias_ih_l1      |    512     |
+|      lstm.bias_hh_l1      |    512     |
+| lstm.weight_ih_l1_reverse |   131072   |
+| lstm.weight_hh_l1_reverse |   65536    |
+|  lstm.bias_ih_l1_reverse  |    512     |
+|  lstm.bias_hh_l1_reverse  |    512     |
+|         fc.weight         |   12800    |
+|          fc.bias          |     50     |
++---------------------------+------------+
+Total Trainable Params: 11809714
+
+
+***************************************
+
+
+top50 - xvalue
+device = cuda:0
+vocab = #7782
+train_set = #27119
+val_set = #1803
+total_params = 1668402
+total_trainable = 1668402
+
+
++---------------------------+------------+
+|          Modules          | Parameters |
++---------------------------+------------+
+|      embedding.weight     |   996096   |
+|     lstm.weight_ih_l0     |   65536    |
+|     lstm.weight_hh_l0     |   65536    |
+|      lstm.bias_ih_l0      |    512     |
+|      lstm.bias_hh_l0      |    512     |
+| lstm.weight_ih_l0_reverse |   65536    |
+| lstm.weight_hh_l0_reverse |   65536    |
+|  lstm.bias_ih_l0_reverse  |    512     |
+|  lstm.bias_hh_l0_reverse  |    512     |
+|     lstm.weight_ih_l1     |   131072   |
+|     lstm.weight_hh_l1     |   65536    |
+|      lstm.bias_ih_l1      |    512     |
+|      lstm.bias_hh_l1      |    512     |
+| lstm.weight_ih_l1_reverse |   131072   |
+| lstm.weight_hh_l1_reverse |   65536    |
+|  lstm.bias_ih_l1_reverse  |    512     |
+|  lstm.bias_hh_l1_reverse  |    512     |
+|         fc.weight         |   12800    |
+|          fc.bias          |     50     |
++---------------------------+------------+
+Total Trainable Params: 1668402
+
+
+***************************************
