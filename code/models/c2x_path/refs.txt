@@ -1,2 +1,2 @@
-> code2vec: https://github.com/tech-srl/code2vec
-> code2seq: https://github.com/tech-srl/code2seq
+> code2vec: https://github.com/tech-srl/code2vec/blob/master/train.sh
+> code2seq: https://github.com/tech-srl/code2seq/blob/master/train.sh
