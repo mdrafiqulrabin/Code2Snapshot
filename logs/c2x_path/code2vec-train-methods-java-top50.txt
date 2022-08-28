@@ -1,0 +1,488 @@
+name: Tesla P100-PCIE-12GB
+
+2021-10-06 00:47:26,999 INFO
+2021-10-06 00:47:26,999 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:26,999 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:26,999 INFO     ---------------------- Creating code2vec model ----------------------
+2021-10-06 00:47:26,999 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:26,999 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:26,999 INFO     Checking number of examples ...
+2021-10-06 00:47:27,070 INFO         Number of train examples: 24246
+2021-10-06 00:47:27,082 INFO         Number of test examples: 1803
+2021-10-06 00:47:27,082 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:27,082 INFO     ----------------- Configuration - Hyper Parameters ------------------
+2021-10-06 00:47:27,082 INFO     CODE_VECTOR_SIZE                          384
+2021-10-06 00:47:27,082 INFO     CSV_BUFFER_SIZE                           104857600
+2021-10-06 00:47:27,082 INFO     DEFAULT_EMBEDDINGS_SIZE                   128
+2021-10-06 00:47:27,082 INFO     DL_FRAMEWORK                              tensorflow
+2021-10-06 00:47:27,082 INFO     DROPOUT_KEEP_RATE                         0.75
+2021-10-06 00:47:27,082 INFO     EXPORT_CODE_VECTORS                       False
+2021-10-06 00:47:27,082 INFO     LOGS_PATH                                 None
+2021-10-06 00:47:27,082 INFO     MAX_CONTEXTS                              200
+2021-10-06 00:47:27,082 INFO     MAX_PATH_VOCAB_SIZE                       911417
+2021-10-06 00:47:27,082 INFO     MAX_TARGET_VOCAB_SIZE                     261245
+2021-10-06 00:47:27,082 INFO     MAX_TOKEN_VOCAB_SIZE                      1301136
+2021-10-06 00:47:27,082 INFO     MAX_TO_KEEP                               52
+2021-10-06 00:47:27,082 INFO     MODEL_LOAD_PATH                           None
+2021-10-06 00:47:27,082 INFO     MODEL_SAVE_PATH                           models/methods/java-top50-model/saved_model
+2021-10-06 00:47:27,082 INFO     NUM_BATCHES_TO_LOG_PROGRESS               100
+2021-10-06 00:47:27,082 INFO     NUM_TEST_EXAMPLES                         1803
+2021-10-06 00:47:27,082 INFO     NUM_TRAIN_BATCHES_TO_EVALUATE             1800
+2021-10-06 00:47:27,082 INFO     NUM_TRAIN_EPOCHS                          51
+2021-10-06 00:47:27,082 INFO     NUM_TRAIN_EXAMPLES                        24246
+2021-10-06 00:47:27,082 INFO     PATH_EMBEDDINGS_SIZE                      128
+2021-10-06 00:47:27,082 INFO     PREDICT                                   False
+2021-10-06 00:47:27,083 INFO     READER_NUM_PARALLEL_BATCHES               6
+2021-10-06 00:47:27,083 INFO     RELEASE                                   False
+2021-10-06 00:47:27,083 INFO     SAVE_EVERY_EPOCHS                         1
+2021-10-06 00:47:27,083 INFO     SAVE_T2V                                  None
+2021-10-06 00:47:27,083 INFO     SAVE_W2V                                  None
+2021-10-06 00:47:27,083 INFO     SEPARATE_OOV_AND_PAD                      False
+2021-10-06 00:47:27,083 INFO     SHUFFLE_BUFFER_SIZE                       10000
+2021-10-06 00:47:27,083 INFO     TARGET_EMBEDDINGS_SIZE                    384
+2021-10-06 00:47:27,083 INFO     TEST_BATCH_SIZE                           128
+2021-10-06 00:47:27,083 INFO     TEST_DATA_PATH                            data/methods/java-top50/java-top50.val.c2v
+2021-10-06 00:47:27,083 INFO     TOKEN_EMBEDDINGS_SIZE                     128
+2021-10-06 00:47:27,083 INFO     TOP_K_WORDS_CONSIDERED_DURING_PREDICTION  10
+2021-10-06 00:47:27,083 INFO     TRAIN_BATCH_SIZE                          128
+2021-10-06 00:47:27,083 INFO     TRAIN_DATA_PATH_PREFIX                    data/methods/java-top50/java-top50
+2021-10-06 00:47:27,083 INFO     USE_TENSORBOARD                           False
+2021-10-06 00:47:27,083 INFO     VERBOSE_MODE                              1
+2021-10-06 00:47:27,083 INFO     _Config__logger                           <Logger code2vec (INFO)>
+2021-10-06 00:47:27,083 INFO     context_vector_size                       384
+2021-10-06 00:47:27,083 INFO     entire_model_load_path                    None
+2021-10-06 00:47:27,083 INFO     entire_model_save_path                    models/methods/java-top50-model/saved_model__entire-model
+2021-10-06 00:47:27,083 INFO     is_loading                                False
+2021-10-06 00:47:27,083 INFO     is_saving                                 True
+2021-10-06 00:47:27,083 INFO     is_testing                                True
+2021-10-06 00:47:27,083 INFO     is_training                               True
+2021-10-06 00:47:27,083 INFO     model_load_dir                            None
+2021-10-06 00:47:27,083 INFO     model_weights_load_path                   None
+2021-10-06 00:47:27,083 INFO     model_weights_save_path                   models/methods/java-top50-model/saved_model__only-weights
+2021-10-06 00:47:27,083 INFO     test_steps                                15
+2021-10-06 00:47:27,083 INFO     train_data_path                           data/methods/java-top50/java-top50.train.c2v
+2021-10-06 00:47:27,083 INFO     train_steps_per_epoch                     190
+2021-10-06 00:47:27,083 INFO     word_freq_dict_path                       data/methods/java-top50/java-top50.dict.c2v
+2021-10-06 00:47:27,083 INFO     ---------------------------------------------------------------------
+2021-10-06 00:47:27,084 INFO     Loading word frequencies dictionaries from: data/methods/java-top50/java-top50.dict.c2v ... 
+2021-10-06 00:47:27,269 INFO     Done loading word frequencies dictionaries.
+2021-10-06 00:47:27,269 INFO     Word frequencies dictionaries loaded. Now creating vocabularies.
+2021-10-06 00:47:27,335 INFO     Created token vocab. size: 71078
+2021-10-06 00:47:27,773 INFO     Created path vocab. size: 464843
+2021-10-06 00:47:27,774 INFO     Created target vocab. size: 51
+2021-10-06 00:47:27,785 INFO     Done creating code2vec model
+2021-10-06 00:47:27,786 INFO     Starting training
+2021-10-06 00:47:32,555 INFO     Number of trainable params: 68765312
+2021-10-06 00:47:32,555 INFO     variable name: model/WORDS_VOCAB:0 -- shape: (71078, 128) -- #params: 9097984
+2021-10-06 00:47:32,555 INFO     variable name: model/TARGET_WORDS_VOCAB:0 -- shape: (51, 384) -- #params: 19584
+2021-10-06 00:47:32,555 INFO     variable name: model/ATTENTION:0 -- shape: (384, 1) -- #params: 384
+2021-10-06 00:47:32,555 INFO     variable name: model/PATHS_VOCAB:0 -- shape: (464843, 128) -- #params: 59499904
+2021-10-06 00:47:32,555 INFO     variable name: model/TRANSFORM:0 -- shape: (384, 384) -- #params: 147456
+2021-10-06 00:47:33.477850: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 237999616 exceeds 10% of system memory.
+2021-10-06 00:47:33.631820: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 237999616 exceeds 10% of system memory.
+2021-10-06 00:47:34.138366: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 237999616 exceeds 10% of system memory.
+2021-10-06 00:47:34.256250: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 237999616 exceeds 10% of system memory.
+2021-10-06 00:47:34.586749: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 237999616 exceeds 10% of system memory.
+2021-10-06 00:47:39,829 INFO     Initalized variables
+2021-10-06 00:47:41,256 INFO     Started reader...
+2021-10-06 00:47:41.587142: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-10-06 00:47:46,016 INFO     Average loss at batch 100: 0.021138, 	throughput: 702 samples/sec
+2021-10-06 00:47:53,450 INFO     Saved after 1 epochs in: models/methods/java-top50-model/saved_model_iter1
+2021-10-06 00:47:54,668 INFO     Starting evaluation
+2021-10-06 00:47:55,467 INFO     Done evaluating, epoch reached
+2021-10-06 00:47:55,467 INFO     Evaluation time: 0H:0M:1S
+2021-10-06 00:47:55,471 INFO     After 1 epochs -- top10_acc: [0.61952302 0.67276761 0.69772601 0.72102052 0.74209651 0.76261786
+ 0.77592901 0.78979479 0.79755962 0.80809762], precision: 0.6362346263008515, recall: 0.6519631604459525, F1: 0.6440028728752694
+2021-10-06 00:47:55,742 INFO     Average loss at batch 200: 0.010303, 	throughput: 1316 samples/sec
+2021-10-06 00:47:58,387 INFO     Average loss at batch 300: 0.007187, 	throughput: 4840 samples/sec
+2021-10-06 00:48:02,413 INFO     Saved after 2 epochs in: models/methods/java-top50-model/saved_model_iter2
+2021-10-06 00:48:02,481 INFO     Starting evaluation
+2021-10-06 00:48:02,954 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:02,954 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:02,955 INFO     After 2 epochs -- top10_acc: [0.64503605 0.70271769 0.72323905 0.74431503 0.76261786 0.77537438
+ 0.78424847 0.79589573 0.80366057 0.81697171], precision: 0.6685990338164252, recall: 0.6708676684440136, F1: 0.6697314299540286
+2021-10-06 00:48:03,483 INFO     Average loss at batch 400: 0.004942, 	throughput: 2512 samples/sec
+2021-10-06 00:48:06,124 INFO     Average loss at batch 500: 0.003895, 	throughput: 4845 samples/sec
+2021-10-06 00:48:10,157 INFO     Saved after 3 epochs in: models/methods/java-top50-model/saved_model_iter3
+2021-10-06 00:48:10,224 INFO     Starting evaluation
+2021-10-06 00:48:10,704 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:10,704 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:10,704 INFO     After 3 epochs -- top10_acc: [0.65557404 0.70715474 0.72434831 0.74764282 0.76539101 0.77870216
+ 0.79312257 0.80754298 0.81530782 0.83194676], precision: 0.6824782187802517, recall: 0.6834706737760543, F1: 0.6829740857350448
+2021-10-06 00:48:11,498 INFO     Average loss at batch 600: 0.002476, 	throughput: 2381 samples/sec
+2021-10-06 00:48:14,189 INFO     Average loss at batch 700: 0.001914, 	throughput: 4758 samples/sec
+2021-10-06 00:48:18,021 INFO     Saved after 4 epochs in: models/methods/java-top50-model/saved_model_iter4
+2021-10-06 00:48:18,089 INFO     Starting evaluation
+2021-10-06 00:48:18,549 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:18,549 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:18,550 INFO     After 4 epochs -- top10_acc: [0.66333888 0.718802   0.7437604  0.76317249 0.786467   0.80587909
+ 0.81919024 0.83361065 0.84636717 0.85468663], precision: 0.6875607385811467, recall: 0.6858943286476006, F1: 0.6867265226886677
+2021-10-06 00:48:19,620 INFO     Average loss at batch 800: 0.001066, 	throughput: 2356 samples/sec
+2021-10-06 00:48:22,272 INFO     Average loss at batch 900: 0.000726, 	throughput: 4826 samples/sec
+2021-10-06 00:48:25,676 INFO     Saved after 5 epochs in: models/methods/java-top50-model/saved_model_iter5
+2021-10-06 00:48:25,747 INFO     Starting evaluation
+2021-10-06 00:48:26,234 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:26,235 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:26,235 INFO     After 5 epochs -- top10_acc: [0.6583472  0.70770937 0.72823073 0.74986134 0.77592901 0.7953411
+ 0.80865225 0.83361065 0.8452579  0.854132  ], precision: 0.6792543021032504, recall: 0.6888027144934561, F1: 0.6839951865222623
+2021-10-06 00:48:27,563 INFO     Average loss at batch 1000: 0.000513, 	throughput: 2419 samples/sec
+2021-10-06 00:48:30,289 INFO     Average loss at batch 1100: 0.000352, 	throughput: 4696 samples/sec
+2021-10-06 00:48:33,313 INFO     Saved after 6 epochs in: models/methods/java-top50-model/saved_model_iter6
+2021-10-06 00:48:33,429 INFO     Starting evaluation
+2021-10-06 00:48:33,888 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:33,888 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:33,888 INFO     After 6 epochs -- top10_acc: [0.66056572 0.71048253 0.73655019 0.76206323 0.78313921 0.80144204
+ 0.82085413 0.83305602 0.84414864 0.85524126], precision: 0.6835016835016835, recall: 0.6888027144934561, F1: 0.686141960405601
+2021-10-06 00:48:35,478 INFO     Average loss at batch 1200: 0.000228, 	throughput: 2466 samples/sec
+2021-10-06 00:48:38,365 INFO     Average loss at batch 1300: 0.000197, 	throughput: 4433 samples/sec
+2021-10-06 00:48:41,095 INFO     Saved after 7 epochs in: models/methods/java-top50-model/saved_model_iter7
+2021-10-06 00:48:41,170 INFO     Starting evaluation
+2021-10-06 00:48:41,642 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:41,642 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:41,643 INFO     After 7 epochs -- top10_acc: [0.65779257 0.70327232 0.7348863  0.76261786 0.77481974 0.79589573
+ 0.81919024 0.83416528 0.84303938 0.85468663], precision: 0.6811175337186898, recall: 0.6854095976732913, F1: 0.6832568253201257
+2021-10-06 00:48:43,499 INFO     Average loss at batch 1400: 0.000140, 	throughput: 2493 samples/sec
+2021-10-06 00:48:46,498 INFO     Average loss at batch 1500: 0.000129, 	throughput: 4267 samples/sec
+2021-10-06 00:48:48,837 INFO     Saved after 8 epochs in: models/methods/java-top50-model/saved_model_iter8
+2021-10-06 00:48:48,904 INFO     Starting evaluation
+2021-10-06 00:48:49,370 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:49,370 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:49,370 INFO     After 8 epochs -- top10_acc: [0.65890183 0.70881864 0.74764282 0.77204659 0.79034942 0.81808098
+ 0.83139212 0.84303938 0.85024958 0.86134221], precision: 0.6738609112709832, recall: 0.681047018904508, F1: 0.6774349083895854
+2021-10-06 00:48:51,493 INFO     Average loss at batch 1600: 0.000115, 	throughput: 2562 samples/sec
+2021-10-06 00:48:54,535 INFO     Average loss at batch 1700: 0.000080, 	throughput: 4207 samples/sec
+2021-10-06 00:48:56,489 INFO     Saved after 9 epochs in: models/methods/java-top50-model/saved_model_iter9
+2021-10-06 00:48:56,556 INFO     Starting evaluation
+2021-10-06 00:48:57,027 INFO     Done evaluating, epoch reached
+2021-10-06 00:48:57,027 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:48:57,028 INFO     After 9 epochs -- top10_acc: [0.64448142 0.71159179 0.73710483 0.76483638 0.78036606 0.80144204
+ 0.82140876 0.83860233 0.85357737 0.86078758], precision: 0.6629807692307692, recall: 0.6684440135724673, F1: 0.6657011827178373
+2021-10-06 00:48:59,408 INFO     Average loss at batch 1800: 0.000086, 	throughput: 2627 samples/sec
+2021-10-06 00:49:02,572 INFO     Average loss at batch 1900: 0.000068, 	throughput: 4046 samples/sec
+2021-10-06 00:49:04,147 INFO     Saved after 10 epochs in: models/methods/java-top50-model/saved_model_iter10
+2021-10-06 00:49:04,217 INFO     Starting evaluation
+2021-10-06 00:49:04,681 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:04,681 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:04,681 INFO     After 10 epochs -- top10_acc: [0.65391015 0.71103716 0.74542429 0.77260122 0.78757626 0.81031614
+ 0.82972823 0.84414864 0.85468663 0.86245147], precision: 0.667465261140393, recall: 0.6752302472127969, F1: 0.6713253012048194
+2021-10-06 00:49:07,331 INFO     Average loss at batch 2000: 0.000062, 	throughput: 2689 samples/sec
+2021-10-06 00:49:11,884 INFO     Saved after 11 epochs in: models/methods/java-top50-model/saved_model_iter11
+2021-10-06 00:49:11,952 INFO     Starting evaluation
+2021-10-06 00:49:12,419 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:12,419 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:12,420 INFO     After 11 epochs -- top10_acc: [0.53854687 0.70937327 0.74542429 0.77260122 0.78480311 0.81087077
+ 0.82806434 0.83860233 0.85246811 0.8630061 ], precision: 0.573282075925036, recall: 0.5782840523509453, F1: 0.5757722007722008
+2021-10-06 00:49:12,684 INFO     Average loss at batch 2100: 0.000044, 	throughput: 2391 samples/sec
+2021-10-06 00:49:15,337 INFO     Average loss at batch 2200: 0.000048, 	throughput: 4823 samples/sec
+2021-10-06 00:49:19,590 INFO     Saved after 12 epochs in: models/methods/java-top50-model/saved_model_iter12
+2021-10-06 00:49:19,656 INFO     Starting evaluation
+2021-10-06 00:49:20,112 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:20,112 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:20,113 INFO     After 12 epochs -- top10_acc: [0.65890183 0.70770937 0.74486966 0.76650028 0.77925679 0.79755962
+ 0.81697171 0.83083749 0.84303938 0.85246811], precision: 0.6737044145873321, recall: 0.6805622879301988, F1: 0.6771159874608151
+2021-10-06 00:49:20,643 INFO     Average loss at batch 2300: 0.000039, 	throughput: 2412 samples/sec
+2021-10-06 00:49:23,298 INFO     Average loss at batch 2400: 0.000028, 	throughput: 4821 samples/sec
+2021-10-06 00:49:27,276 INFO     Saved after 13 epochs in: models/methods/java-top50-model/saved_model_iter13
+2021-10-06 00:49:27,356 INFO     Starting evaluation
+2021-10-06 00:49:27,817 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:27,817 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:27,817 INFO     After 13 epochs -- top10_acc: [0.65890183 0.7099279  0.74320577 0.76594565 0.78424847 0.80754298
+ 0.81697171 0.83471991 0.8469218  0.85524126], precision: 0.6745079212674028, recall: 0.681047018904508, F1: 0.6777616980221901
+2021-10-06 00:49:28,609 INFO     Average loss at batch 2500: 0.000020, 	throughput: 2410 samples/sec
+2021-10-06 00:49:31,261 INFO     Average loss at batch 2600: 0.000029, 	throughput: 4826 samples/sec
+2021-10-06 00:49:34,967 INFO     Saved after 14 epochs in: models/methods/java-top50-model/saved_model_iter14
+2021-10-06 00:49:35,042 INFO     Starting evaluation
+2021-10-06 00:49:35,507 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:35,507 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:35,507 INFO     After 14 epochs -- top10_acc: [0.65335552 0.71103716 0.73876872 0.7598447  0.78369384 0.80199667
+ 0.81364393 0.8291736  0.83971159 0.84858569], precision: 0.6660277910876857, recall: 0.6737760542898691, F1: 0.6698795180722892
+2021-10-06 00:49:36,567 INFO     Average loss at batch 2700: 0.000030, 	throughput: 2412 samples/sec
+2021-10-06 00:49:39,271 INFO     Average loss at batch 2800: 0.000017, 	throughput: 4734 samples/sec
+2021-10-06 00:49:42,674 INFO     Saved after 15 epochs in: models/methods/java-top50-model/saved_model_iter15
+2021-10-06 00:49:42,751 INFO     Starting evaluation
+2021-10-06 00:49:43,216 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:43,216 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:43,217 INFO     After 15 epochs -- top10_acc: [0.65779257 0.71270105 0.74875208 0.77537438 0.7936772  0.80865225
+ 0.82529118 0.83361065 0.84581253 0.85302274], precision: 0.6700143472022956, recall: 0.679108095007271, F1: 0.6745305729417429
+2021-10-06 00:49:44,541 INFO     Average loss at batch 2900: 0.000020, 	throughput: 2428 samples/sec
+2021-10-06 00:49:47,349 INFO     Average loss at batch 3000: 0.000027, 	throughput: 4558 samples/sec
+2021-10-06 00:49:50,388 INFO     Saved after 16 epochs in: models/methods/java-top50-model/saved_model_iter16
+2021-10-06 00:49:50,456 INFO     Starting evaluation
+2021-10-06 00:49:50,919 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:50,920 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:50,920 INFO     After 16 epochs -- top10_acc: [0.65557404 0.71824737 0.75041597 0.77648364 0.79423184 0.81364393
+ 0.82584581 0.83305602 0.84803106 0.86134221], precision: 0.669054441260745, recall: 0.679108095007271, F1: 0.6740437815732498
+2021-10-06 00:49:52,513 INFO     Average loss at batch 3100: 0.000039, 	throughput: 2478 samples/sec
+2021-10-06 00:49:55,442 INFO     Average loss at batch 3200: 0.000030, 	throughput: 4369 samples/sec
+2021-10-06 00:49:58,108 INFO     Saved after 17 epochs in: models/methods/java-top50-model/saved_model_iter17
+2021-10-06 00:49:58,184 INFO     Starting evaluation
+2021-10-06 00:49:58,646 INFO     Done evaluating, epoch reached
+2021-10-06 00:49:58,647 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:49:58,647 INFO     After 17 epochs -- top10_acc: [0.64281753 0.7010538  0.73377704 0.75873544 0.78092069 0.78924016
+ 0.80033278 0.80976151 0.81974487 0.82750971], precision: 0.6624879459980714, recall: 0.666020358700921, F1: 0.6642494561276286
+2021-10-06 00:50:00,509 INFO     Average loss at batch 3300: 0.000018, 	throughput: 2526 samples/sec
+2021-10-06 00:50:03,513 INFO     Average loss at batch 3400: 0.000022, 	throughput: 4262 samples/sec
+2021-10-06 00:50:05,805 INFO     Saved after 18 epochs in: models/methods/java-top50-model/saved_model_iter18
+2021-10-06 00:50:05,881 INFO     Starting evaluation
+2021-10-06 00:50:06,341 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:06,341 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:06,342 INFO     After 18 epochs -- top10_acc: [0.65002773 0.71103716 0.74708819 0.77260122 0.79256794 0.80643372
+ 0.82362729 0.83416528 0.84470327 0.85302274], precision: 0.66, recall: 0.671837130392632, F1: 0.6658659620466011
+2021-10-06 00:50:08,469 INFO     Average loss at batch 3500: 0.000018, 	throughput: 2582 samples/sec
+2021-10-06 00:50:11,569 INFO     Average loss at batch 3600: 0.000021, 	throughput: 4129 samples/sec
+2021-10-06 00:50:13,522 INFO     Saved after 19 epochs in: models/methods/java-top50-model/saved_model_iter19
+2021-10-06 00:50:13,589 INFO     Starting evaluation
+2021-10-06 00:50:14,055 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:14,055 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:14,056 INFO     After 19 epochs -- top10_acc: [0.64170826 0.70937327 0.73876872 0.76816417 0.79201331 0.8114254
+ 0.82418192 0.83693844 0.84636717 0.85745979], precision: 0.6550071873502635, recall: 0.6626272418807562, F1: 0.6587951807228916
+2021-10-06 00:50:16,442 INFO     Average loss at batch 3700: 0.000017, 	throughput: 2626 samples/sec
+2021-10-06 00:50:19,668 INFO     Average loss at batch 3800: 0.000014, 	throughput: 3967 samples/sec
+2021-10-06 00:50:21,246 INFO     Saved after 20 epochs in: models/methods/java-top50-model/saved_model_iter20
+2021-10-06 00:50:21,326 INFO     Starting evaluation
+2021-10-06 00:50:21,796 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:21,796 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:21,796 INFO     After 20 epochs -- top10_acc: [0.64669994 0.70937327 0.74320577 0.7703827  0.78535774 0.80532446
+ 0.81974487 0.83083749 0.83582917 0.84470327], precision: 0.6649038461538461, recall: 0.6703829374697043, F1: 0.6676321506154961
+2021-10-06 00:50:24,458 INFO     Average loss at batch 3900: 0.000017, 	throughput: 2672 samples/sec
+2021-10-06 00:50:29,010 INFO     Saved after 21 epochs in: models/methods/java-top50-model/saved_model_iter21
+2021-10-06 00:50:29,088 INFO     Starting evaluation
+2021-10-06 00:50:29,556 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:29,556 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:29,557 INFO     After 21 epochs -- top10_acc: [0.65668331 0.7099279  0.74653356 0.76927343 0.79090405 0.80587909
+ 0.82307266 0.83471991 0.84470327 0.85302274], precision: 0.6717630195891066, recall: 0.6815317498788173, F1: 0.6766121270452359
+2021-10-06 00:50:29,821 INFO     Average loss at batch 4000: 0.000017, 	throughput: 2386 samples/sec
+2021-10-06 00:50:32,471 INFO     Average loss at batch 4100: 0.000005, 	throughput: 4830 samples/sec
+2021-10-06 00:50:36,733 INFO     Saved after 22 epochs in: models/methods/java-top50-model/saved_model_iter22
+2021-10-06 00:50:36,809 INFO     Starting evaluation
+2021-10-06 00:50:37,271 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:37,271 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:37,272 INFO     After 22 epochs -- top10_acc: [0.64891847 0.70881864 0.74431503 0.76760954 0.79589573 0.80920688
+ 0.82307266 0.83749307 0.84414864 0.85080422], precision: 0.6700581395348837, recall: 0.6703829374697043, F1: 0.6702204991519264
+2021-10-06 00:50:37,803 INFO     Average loss at batch 4200: 0.000012, 	throughput: 2400 samples/sec
+2021-10-06 00:50:40,453 INFO     Average loss at batch 4300: 0.000014, 	throughput: 4831 samples/sec
+2021-10-06 00:50:44,502 INFO     Saved after 23 epochs in: models/methods/java-top50-model/saved_model_iter23
+2021-10-06 00:50:44,569 INFO     Starting evaluation
+2021-10-06 00:50:45,033 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:45,033 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:45,034 INFO     After 23 epochs -- top10_acc: [0.64891847 0.70715474 0.74431503 0.76982806 0.79256794 0.80643372
+ 0.82140876 0.83250139 0.83915696 0.85191348], precision: 0.6698982064953951, recall: 0.6698982064953951, F1: 0.6698982064953951
+2021-10-06 00:50:45,837 INFO     Average loss at batch 4400: 0.000009, 	throughput: 2377 samples/sec
+2021-10-06 00:50:48,489 INFO     Average loss at batch 4500: 0.000005, 	throughput: 4826 samples/sec
+2021-10-06 00:50:52,289 INFO     Saved after 24 epochs in: models/methods/java-top50-model/saved_model_iter24
+2021-10-06 00:50:52,365 INFO     Starting evaluation
+2021-10-06 00:50:52,825 INFO     Done evaluating, epoch reached
+2021-10-06 00:50:52,826 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:50:52,826 INFO     After 24 epochs -- top10_acc: [0.64669994 0.70881864 0.74708819 0.77260122 0.79700499 0.8130893
+ 0.82473655 0.83527454 0.84414864 0.854132  ], precision: 0.6658619024625785, recall: 0.6684440135724673, F1: 0.6671504596032898
+2021-10-06 00:50:53,888 INFO     Average loss at batch 4600: 0.000015, 	throughput: 2371 samples/sec
+2021-10-06 00:50:56,588 INFO     Average loss at batch 4700: 0.000009, 	throughput: 4739 samples/sec
+2021-10-06 00:50:59,978 INFO     Saved after 25 epochs in: models/methods/java-top50-model/saved_model_iter25
+2021-10-06 00:51:00,054 INFO     Starting evaluation
+2021-10-06 00:51:00,515 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:00,516 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:00,516 INFO     After 25 epochs -- top10_acc: [0.63838048 0.70715474 0.74653356 0.77371048 0.79312257 0.80587909
+ 0.81974487 0.83471991 0.83860233 0.85080422], precision: 0.6608611514271892, recall: 0.6621425109064469, F1: 0.661501210653753
+2021-10-06 00:51:01,839 INFO     Average loss at batch 4800: 0.000019, 	throughput: 2437 samples/sec
+2021-10-06 00:51:04,665 INFO     Average loss at batch 4900: 0.000061, 	throughput: 4529 samples/sec
+2021-10-06 00:51:07,703 INFO     Saved after 26 epochs in: models/methods/java-top50-model/saved_model_iter26
+2021-10-06 00:51:07,782 INFO     Starting evaluation
+2021-10-06 00:51:08,246 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:08,246 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:08,246 INFO     After 26 epochs -- top10_acc: [0.65391015 0.71103716 0.74875208 0.77481974 0.79312257 0.81919024
+ 0.83250139 0.84803106 0.85912368 0.86966167], precision: 0.6760426770126091, recall: 0.6757149781871061, F1: 0.6758787878787879
+2021-10-06 00:51:09,846 INFO     Average loss at batch 5000: 0.000031, 	throughput: 2470 samples/sec
+2021-10-06 00:51:12,744 INFO     Average loss at batch 5100: 0.000017, 	throughput: 4416 samples/sec
+2021-10-06 00:51:15,439 INFO     Saved after 27 epochs in: models/methods/java-top50-model/saved_model_iter27
+2021-10-06 00:51:15,515 INFO     Starting evaluation
+2021-10-06 00:51:15,965 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:15,965 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:15,965 INFO     After 27 epochs -- top10_acc: [0.65224626 0.70438159 0.73765946 0.76539101 0.78480311 0.80366057
+ 0.81364393 0.82584581 0.83139212 0.83915696], precision: 0.6729651162790697, recall: 0.6732913233155599, F1: 0.6731281802762297
+2021-10-06 00:51:17,819 INFO     Average loss at batch 5200: 0.000019, 	throughput: 2522 samples/sec
+2021-10-06 00:51:20,847 INFO     Average loss at batch 5300: 0.000012, 	throughput: 4228 samples/sec
+2021-10-06 00:51:23,162 INFO     Saved after 28 epochs in: models/methods/java-top50-model/saved_model_iter28
+2021-10-06 00:51:23,238 INFO     Starting evaluation
+2021-10-06 00:51:23,690 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:23,690 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:23,691 INFO     After 28 epochs -- top10_acc: [0.65668331 0.71381032 0.74875208 0.76760954 0.78702163 0.80476983
+ 0.81752634 0.82806434 0.83582917 0.84303938], precision: 0.6806640625, recall: 0.6757149781871061, F1: 0.6781804913646314
+2021-10-06 00:51:25,812 INFO     Average loss at batch 5400: 0.000008, 	throughput: 2577 samples/sec
+2021-10-06 00:51:28,890 INFO     Average loss at batch 5500: 0.000010, 	throughput: 4159 samples/sec
+2021-10-06 00:51:30,827 INFO     Saved after 29 epochs in: models/methods/java-top50-model/saved_model_iter29
+2021-10-06 00:51:30,903 INFO     Starting evaluation
+2021-10-06 00:51:31,375 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:31,375 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:31,375 INFO     After 29 epochs -- top10_acc: [0.65113699 0.70770937 0.73322241 0.7615086  0.78147532 0.80698835
+ 0.81974487 0.82861897 0.8363838  0.84636717], precision: 0.6749031007751938, recall: 0.6752302472127969, F1: 0.6750666343590986
+2021-10-06 00:51:33,759 INFO     Average loss at batch 5600: 0.000013, 	throughput: 2628 samples/sec
+2021-10-06 00:51:36,914 INFO     Average loss at batch 5700: 0.000006, 	throughput: 4057 samples/sec
+2021-10-06 00:51:38,509 INFO     Saved after 30 epochs in: models/methods/java-top50-model/saved_model_iter30
+2021-10-06 00:51:38,585 INFO     Starting evaluation
+2021-10-06 00:51:39,053 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:39,053 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:39,054 INFO     After 30 epochs -- top10_acc: [0.65446478 0.71436495 0.74431503 0.76982806 0.78535774 0.80809762
+ 0.81641708 0.82640044 0.83471991 0.84137549], precision: 0.6813559322033899, recall: 0.6820164808531265, F1: 0.6816860465116279
+2021-10-06 00:51:41,707 INFO     Average loss at batch 5800: 0.000008, 	throughput: 2670 samples/sec
+2021-10-06 00:51:46,230 INFO     Saved after 31 epochs in: models/methods/java-top50-model/saved_model_iter31
+2021-10-06 00:51:46,297 INFO     Starting evaluation
+2021-10-06 00:51:46,764 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:46,764 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:46,765 INFO     After 31 epochs -- top10_acc: [0.64448142 0.71159179 0.74708819 0.76982806 0.78369384 0.80754298
+ 0.81752634 0.83250139 0.83915696 0.84803106], precision: 0.6663452266152362, recall: 0.6698982064953951, F1: 0.6681169929900894
+2021-10-06 00:51:47,031 INFO     Average loss at batch 5900: 0.000007, 	throughput: 2404 samples/sec
+2021-10-06 00:51:49,684 INFO     Average loss at batch 6000: 0.000004, 	throughput: 4825 samples/sec
+2021-10-06 00:51:53,897 INFO     Saved after 32 epochs in: models/methods/java-top50-model/saved_model_iter32
+2021-10-06 00:51:53,972 INFO     Starting evaluation
+2021-10-06 00:51:54,440 INFO     Done evaluating, epoch reached
+2021-10-06 00:51:54,440 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:51:54,441 INFO     After 32 epochs -- top10_acc: [0.65058236 0.718802   0.75152524 0.77204659 0.78424847 0.80366057
+ 0.81419856 0.82861897 0.8380477  0.84303938], precision: 0.6721470019342359, recall: 0.6737760542898691, F1: 0.672960542241588
+2021-10-06 00:51:54,979 INFO     Average loss at batch 6100: 0.000011, 	throughput: 2417 samples/sec
+2021-10-06 00:51:57,621 INFO     Average loss at batch 6200: 0.000012, 	throughput: 4845 samples/sec
+2021-10-06 00:52:01,592 INFO     Saved after 33 epochs in: models/methods/java-top50-model/saved_model_iter33
+2021-10-06 00:52:01,668 INFO     Starting evaluation
+2021-10-06 00:52:02,127 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:02,127 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:02,127 INFO     After 33 epochs -- top10_acc: [0.65391015 0.71824737 0.74764282 0.76982806 0.78979479 0.80587909
+ 0.82140876 0.83250139 0.83915696 0.84747643], precision: 0.6771387143547608, recall: 0.679108095007271, F1: 0.6781219748305906
+2021-10-06 00:52:02,939 INFO     Average loss at batch 6300: 0.000009, 	throughput: 2407 samples/sec
+2021-10-06 00:52:05,592 INFO     Average loss at batch 6400: 0.000002, 	throughput: 4823 samples/sec
+2021-10-06 00:52:09,317 INFO     Saved after 34 epochs in: models/methods/java-top50-model/saved_model_iter34
+2021-10-06 00:52:09,395 INFO     Starting evaluation
+2021-10-06 00:52:09,885 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:09,885 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:09,886 INFO     After 34 epochs -- top10_acc: [0.65335552 0.71270105 0.74708819 0.76927343 0.79090405 0.80865225
+ 0.81808098 0.8291736  0.84137549 0.84969495], precision: 0.6781720952843947, recall: 0.6761997091614154, F1: 0.6771844660194175
+2021-10-06 00:52:10,994 INFO     Average loss at batch 6500: 0.000007, 	throughput: 2369 samples/sec
+2021-10-06 00:52:13,679 INFO     Average loss at batch 6600: 0.000005, 	throughput: 4767 samples/sec
+2021-10-06 00:52:17,095 INFO     Saved after 35 epochs in: models/methods/java-top50-model/saved_model_iter35
+2021-10-06 00:52:17,172 INFO     Starting evaluation
+2021-10-06 00:52:17,633 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:17,633 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:17,634 INFO     After 35 epochs -- top10_acc: [0.65280089 0.71325568 0.75041597 0.7775929  0.79423184 0.80809762
+ 0.81863561 0.82972823 0.83693844 0.8469218 ], precision: 0.6783625730994152, recall: 0.6747455162384877, F1: 0.6765492102065613
+2021-10-06 00:52:18,971 INFO     Average loss at batch 6700: 0.000006, 	throughput: 2418 samples/sec
+2021-10-06 00:52:21,763 INFO     Average loss at batch 6800: 0.000013, 	throughput: 4585 samples/sec
+2021-10-06 00:52:24,802 INFO     Saved after 36 epochs in: models/methods/java-top50-model/saved_model_iter36
+2021-10-06 00:52:24,877 INFO     Starting evaluation
+2021-10-06 00:52:25,338 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:25,338 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:25,338 INFO     After 36 epochs -- top10_acc: [0.64503605 0.70937327 0.74653356 0.77371048 0.79145868 0.80920688
+ 0.81863561 0.8291736  0.83582917 0.84747643], precision: 0.6718597857838364, recall: 0.6689287445467765, F1: 0.6703910614525139
+2021-10-06 00:52:26,941 INFO     Average loss at batch 6900: 0.000003, 	throughput: 2472 samples/sec
+2021-10-06 00:52:29,761 INFO     Average loss at batch 7000: 0.000005, 	throughput: 4538 samples/sec
+2021-10-06 00:52:32,462 INFO     Saved after 37 epochs in: models/methods/java-top50-model/saved_model_iter37
+2021-10-06 00:52:32,539 INFO     Starting evaluation
+2021-10-06 00:52:33,000 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:33,000 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:33,001 INFO     After 37 epochs -- top10_acc: [0.63782585 0.71214642 0.74819745 0.77315585 0.79256794 0.80587909
+ 0.81863561 0.83194676 0.84026622 0.84803106], precision: 0.6652131782945736, recall: 0.6655356277266117, F1: 0.665374363944754
+2021-10-06 00:52:34,867 INFO     Average loss at batch 7100: 0.000005, 	throughput: 2506 samples/sec
+2021-10-06 00:52:37,815 INFO     Average loss at batch 7200: 0.000010, 	throughput: 4341 samples/sec
+2021-10-06 00:52:40,132 INFO     Saved after 38 epochs in: models/methods/java-top50-model/saved_model_iter38
+2021-10-06 00:52:40,236 INFO     Starting evaluation
+2021-10-06 00:52:40,701 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:40,701 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:40,701 INFO     After 38 epochs -- top10_acc: [0.640599   0.71325568 0.7509706  0.77315585 0.79423184 0.80865225
+ 0.82251803 0.83915696 0.84803106 0.85745979], precision: 0.6681243926141885, recall: 0.6665050896752303, F1: 0.6673137587964086
+2021-10-06 00:52:42,846 INFO     Average loss at batch 7300: 0.000008, 	throughput: 2544 samples/sec
+2021-10-06 00:52:45,901 INFO     Average loss at batch 7400: 0.000020, 	throughput: 4189 samples/sec
+2021-10-06 00:52:47,896 INFO     Saved after 39 epochs in: models/methods/java-top50-model/saved_model_iter39
+2021-10-06 00:52:47,972 INFO     Starting evaluation
+2021-10-06 00:52:48,459 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:48,460 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:48,460 INFO     After 39 epochs -- top10_acc: [0.60565724 0.67997781 0.71547421 0.74986134 0.76816417 0.78702163
+ 0.80088741 0.80754298 0.82085413 0.83194676], precision: 0.6301303718010622, recall: 0.6325739214735822, F1: 0.6313497822931785
+2021-10-06 00:52:50,855 INFO     Average loss at batch 7500: 0.000019, 	throughput: 2584 samples/sec
+2021-10-06 00:52:54,060 INFO     Average loss at batch 7600: 0.000010, 	throughput: 3993 samples/sec
+2021-10-06 00:52:55,674 INFO     Saved after 40 epochs in: models/methods/java-top50-model/saved_model_iter40
+2021-10-06 00:52:55,750 INFO     Starting evaluation
+2021-10-06 00:52:56,220 INFO     Done evaluating, epoch reached
+2021-10-06 00:52:56,221 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:52:56,221 INFO     After 40 epochs -- top10_acc: [0.63616195 0.71270105 0.74764282 0.7687188  0.78702163 0.80976151
+ 0.82196339 0.83361065 0.84137549 0.84803106], precision: 0.6613294517224648, recall: 0.6606883179835191, F1: 0.6610087293889427
+2021-10-06 00:52:58,888 INFO     Average loss at batch 7700: 0.000011, 	throughput: 2651 samples/sec
+2021-10-06 00:53:03,382 INFO     Saved after 41 epochs in: models/methods/java-top50-model/saved_model_iter41
+2021-10-06 00:53:03,458 INFO     Starting evaluation
+2021-10-06 00:53:03,919 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:03,919 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:03,919 INFO     After 41 epochs -- top10_acc: [0.63227953 0.69883527 0.73544093 0.75707155 0.77870216 0.79090405
+ 0.80809762 0.82418192 0.8363838  0.84969495], precision: 0.6606621226874392, recall: 0.6577799321376636, F1: 0.659217877094972
+2021-10-06 00:53:04,193 INFO     Average loss at batch 7800: 0.000029, 	throughput: 2412 samples/sec
+2021-10-06 00:53:06,844 INFO     Average loss at batch 7900: 0.000008, 	throughput: 4828 samples/sec
+2021-10-06 00:53:11,103 INFO     Saved after 42 epochs in: models/methods/java-top50-model/saved_model_iter42
+2021-10-06 00:53:11,179 INFO     Starting evaluation
+2021-10-06 00:53:11,641 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:11,641 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:11,641 INFO     After 42 epochs -- top10_acc: [0.64669994 0.72102052 0.75485302 0.78036606 0.79700499 0.81364393
+ 0.82750971 0.8380477  0.84803106 0.86134221], precision: 0.6749755620723362, recall: 0.6694134755210858, F1: 0.6721830128985153
+2021-10-06 00:53:12,183 INFO     Average loss at batch 8000: 0.000004, 	throughput: 2397 samples/sec
+2021-10-06 00:53:14,841 INFO     Average loss at batch 8100: 0.000007, 	throughput: 4814 samples/sec
+2021-10-06 00:53:18,724 INFO     Saved after 43 epochs in: models/methods/java-top50-model/saved_model_iter43
+2021-10-06 00:53:18,799 INFO     Starting evaluation
+2021-10-06 00:53:19,276 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:19,276 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:19,276 INFO     After 43 epochs -- top10_acc: [0.65668331 0.72823073 0.76483638 0.78924016 0.8025513  0.82140876
+ 0.83139212 0.84082085 0.85357737 0.86356073], precision: 0.6743295019157088, recall: 0.6825012118274357, F1: 0.6783907492170561
+2021-10-06 00:53:20,078 INFO     Average loss at batch 8200: 0.000005, 	throughput: 2444 samples/sec
+2021-10-06 00:53:22,734 INFO     Average loss at batch 8300: 0.000006, 	throughput: 4819 samples/sec
+2021-10-06 00:53:26,418 INFO     Saved after 44 epochs in: models/methods/java-top50-model/saved_model_iter44
+2021-10-06 00:53:26,494 INFO     Starting evaluation
+2021-10-06 00:53:26,953 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:26,953 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:26,953 INFO     After 44 epochs -- top10_acc: [0.65557404 0.72323905 0.75929007 0.78092069 0.8025513  0.8202995
+ 0.8363838  0.84414864 0.86134221 0.87021631], precision: 0.6717630195891066, recall: 0.6815317498788173, F1: 0.6766121270452359
+2021-10-06 00:53:28,028 INFO     Average loss at batch 8400: 0.000002, 	throughput: 2417 samples/sec
+2021-10-06 00:53:30,686 INFO     Average loss at batch 8500: 0.000009, 	throughput: 4815 samples/sec
+2021-10-06 00:53:34,151 INFO     Saved after 45 epochs in: models/methods/java-top50-model/saved_model_iter45
+2021-10-06 00:53:34,228 INFO     Starting evaluation
+2021-10-06 00:53:34,686 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:34,686 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:34,686 INFO     After 45 epochs -- top10_acc: [0.64836384 0.72434831 0.75374376 0.78036606 0.79866889 0.81198003
+ 0.82418192 0.83471991 0.85302274 0.86466999], precision: 0.6676258992805756, recall: 0.6747455162384877, F1: 0.6711668273866924
+2021-10-06 00:53:36,022 INFO     Average loss at batch 8600: 0.000004, 	throughput: 2398 samples/sec
+2021-10-06 00:53:38,755 INFO     Average loss at batch 8700: 0.000005, 	throughput: 4683 samples/sec
+2021-10-06 00:53:41,940 INFO     Saved after 46 epochs in: models/methods/java-top50-model/saved_model_iter46
+2021-10-06 00:53:42,015 INFO     Starting evaluation
+2021-10-06 00:53:42,489 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:42,489 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:42,490 INFO     After 46 epochs -- top10_acc: [0.65169163 0.72878536 0.75540765 0.77703827 0.79645036 0.80809762
+ 0.82695507 0.8380477  0.854132   0.8630061 ], precision: 0.6703402012458074, recall: 0.6781386330586524, F1: 0.6742168674698795
+2021-10-06 00:53:44,098 INFO     Average loss at batch 8800: 0.000000, 	throughput: 2396 samples/sec
+2021-10-06 00:53:46,943 INFO     Average loss at batch 8900: 0.000006, 	throughput: 4498 samples/sec
+2021-10-06 00:53:49,709 INFO     Saved after 47 epochs in: models/methods/java-top50-model/saved_model_iter47
+2021-10-06 00:53:49,789 INFO     Starting evaluation
+2021-10-06 00:53:50,249 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:50,249 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:50,250 INFO     After 47 epochs -- top10_acc: [0.64836384 0.71602884 0.7509706  0.77648364 0.80199667 0.81475319
+ 0.82806434 0.84026622 0.85302274 0.86356073], precision: 0.6673076923076923, recall: 0.6728065923412506, F1: 0.6700458604875694
+2021-10-06 00:53:52,113 INFO     Average loss at batch 9000: 0.000002, 	throughput: 2475 samples/sec
+2021-10-06 00:53:55,001 INFO     Average loss at batch 9100: 0.000008, 	throughput: 4432 samples/sec
+2021-10-06 00:53:57,269 INFO     Saved after 48 epochs in: models/methods/java-top50-model/saved_model_iter48
+2021-10-06 00:53:57,344 INFO     Starting evaluation
+2021-10-06 00:53:57,798 INFO     Done evaluating, epoch reached
+2021-10-06 00:53:57,798 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:53:57,798 INFO     After 48 epochs -- top10_acc: [0.64891847 0.718802   0.75374376 0.77592901 0.79645036 0.81253466
+ 0.82529118 0.8380477  0.84803106 0.86189684], precision: 0.6677868458953432, recall: 0.6742607852641784, F1: 0.6710082006753498
+2021-10-06 00:53:59,934 INFO     Average loss at batch 9200: 0.000003, 	throughput: 2594 samples/sec
+2021-10-06 00:54:02,937 INFO     Average loss at batch 9300: 0.000007, 	throughput: 4262 samples/sec
+2021-10-06 00:54:04,889 INFO     Saved after 49 epochs in: models/methods/java-top50-model/saved_model_iter49
+2021-10-06 00:54:04,969 INFO     Starting evaluation
+2021-10-06 00:54:05,447 INFO     Done evaluating, epoch reached
+2021-10-06 00:54:05,447 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:54:05,448 INFO     After 49 epochs -- top10_acc: [0.63893511 0.71547421 0.75540765 0.77648364 0.80088741 0.8130893
+ 0.82307266 0.83971159 0.85080422 0.86189684], precision: 0.6607056549057516, recall: 0.6626272418807562, F1: 0.6616650532429815
+2021-10-06 00:54:07,848 INFO     Average loss at batch 9400: 0.000004, 	throughput: 2606 samples/sec
+2021-10-06 00:54:10,933 INFO     Average loss at batch 9500: 0.000004, 	throughput: 4148 samples/sec
+2021-10-06 00:54:12,497 INFO     Saved after 50 epochs in: models/methods/java-top50-model/saved_model_iter50
+2021-10-06 00:54:12,573 INFO     Starting evaluation
+2021-10-06 00:54:13,035 INFO     Done evaluating, epoch reached
+2021-10-06 00:54:13,035 INFO     Evaluation time: 0H:0M:0S
+2021-10-06 00:54:13,036 INFO     After 50 epochs -- top10_acc: [0.64337216 0.71935663 0.75429839 0.77814753 0.79645036 0.81364393
+ 0.82695507 0.8380477  0.84969495 0.86245147], precision: 0.663632007666507, recall: 0.6713523994183228, F1: 0.6674698795180724
+2021-10-06 00:54:15,705 INFO     Average loss at batch 9600: 0.000008, 	throughput: 2682 samples/sec
+2021-10-06 00:54:17,465 INFO     Done training
+2021-10-06 00:54:18,733 INFO     Model saved in file: models/methods/java-top50-model/saved_model
+2021-10-06 00:54:18,735 INFO     Training time: 0H:6M:50S
+

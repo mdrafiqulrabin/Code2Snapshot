@@ -1,0 +1,11 @@
+name: Tesla P100-PCIE-12GB
+...
+2021-10-06 03:31:53.362793: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Loading dictionaries from: /scratch/deployment/code-path/code2seq/models/methods/java-top50-model/saved_model_iter26
+Done loading dictionaries
+Created model
+Done loading model
+Done testing, epoch reached
+Evaluation time: 0h0m10s
+Accuracy: 0.7509964830011724
+Precision: 0.8005123825789923, recall: 0.7980589136727396, F1: 0.7992837653478854

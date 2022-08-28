@@ -1,0 +1,438 @@
+name: Tesla P100-PCIE-12GB
+
+Dictionaries loaded.
+Loaded subtoken vocab. size: 11151
+Loaded target word vocab. size: 57
+Loaded nodes vocab. size: 284
+Created model
+Starting training
+
+Training batch size:			 128
+Dataset path:				 data/methods/java-top50/java-top50
+Training file path:			 data/methods/java-top50/java-top50.train.c2s
+Validation path:			 data/methods/java-top50/java-top50.val.c2s
+Taking max contexts from each example:	 200
+Random path sampling:			 True
+Embedding size:				 128
+Using BiLSTMs, each of size:		 128
+Decoder size:				 320
+Decoder layers:				 1
+Max path lengths:			 9
+Max subtokens in a token:		 5
+Max target length:			 6
+Embeddings dropout keep_prob:		 0.75
+LSTM dropout keep_prob:			 0.5
+============================================
+
+Number of trainable params: 3207744
+
+Initialized variables
+Started reader...
+2021-10-06 02:39:48.398640: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Average loss at batch 100: 6.680771, 	throughput: 417 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 1 epochs: 0.11037
+After 1 epochs: Precision: 0.18460, recall: 0.16966, F1: 0.17681
+Saved after 1 epochs in: models/methods/java-top50-model/saved_model_iter1
+Average loss at batch 200: 4.118504, 	throughput: 360 samples/sec
+Average loss at batch 300: 2.710823, 	throughput: 533 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 2 epochs: 0.30616
+After 2 epochs: Precision: 0.37288, recall: 0.37324, F1: 0.37306
+Saved after 2 epochs in: models/methods/java-top50-model/saved_model_iter2
+Average loss at batch 400: 2.033851, 	throughput: 395 samples/sec
+Average loss at batch 500: 1.559760, 	throughput: 526 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 3 epochs: 0.39601
+After 3 epochs: Precision: 0.44852, recall: 0.46243, F1: 0.45537
+Saved after 3 epochs in: models/methods/java-top50-model/saved_model_iter3
+Average loss at batch 600: 1.398478, 	throughput: 397 samples/sec
+Average loss at batch 700: 1.248772, 	throughput: 515 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 4 epochs: 0.62840
+After 4 epochs: Precision: 0.65491, recall: 0.66602, F1: 0.66042
+Saved after 4 epochs in: models/methods/java-top50-model/saved_model_iter4
+Average loss at batch 800: 1.127245, 	throughput: 402 samples/sec
+Average loss at batch 900: 1.075187, 	throughput: 513 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 5 epochs: 0.64781
+After 5 epochs: Precision: 0.67354, recall: 0.68105, F1: 0.67727
+Saved after 5 epochs in: models/methods/java-top50-model/saved_model_iter5
+Average loss at batch 1000: 0.969741, 	throughput: 405 samples/sec
+Average loss at batch 1100: 0.959473, 	throughput: 507 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 6 epochs: 0.65668
+After 6 epochs: Precision: 0.68054, recall: 0.68977, F1: 0.68512
+Saved after 6 epochs in: models/methods/java-top50-model/saved_model_iter6
+Average loss at batch 1200: 0.855226, 	throughput: 408 samples/sec
+Average loss at batch 1300: 0.876965, 	throughput: 502 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 7 epochs: 0.65724
+After 7 epochs: Precision: 0.68090, recall: 0.68783, F1: 0.68435
+Saved after 7 epochs in: models/methods/java-top50-model/saved_model_iter7
+Average loss at batch 1400: 0.773579, 	throughput: 411 samples/sec
+Average loss at batch 1500: 0.811488, 	throughput: 497 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 8 epochs: 0.66500
+After 8 epochs: Precision: 0.69038, recall: 0.69607, F1: 0.69322
+Saved after 8 epochs in: models/methods/java-top50-model/saved_model_iter8
+Average loss at batch 1600: 0.709574, 	throughput: 416 samples/sec
+Average loss at batch 1700: 0.759684, 	throughput: 490 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 9 epochs: 0.66278
+After 9 epochs: Precision: 0.68550, recall: 0.69413, F1: 0.68979
+Saved after 9 epochs in: models/methods/java-top50-model/saved_model_iter9
+Average loss at batch 1800: 0.660837, 	throughput: 419 samples/sec
+Average loss at batch 1900: 0.740104, 	throughput: 487 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 10 epochs: 0.66334
+After 10 epochs: Precision: 0.68849, recall: 0.69317, F1: 0.69082
+Saved after 10 epochs in: models/methods/java-top50-model/saved_model_iter10
+Average loss at batch 2000: 0.612637, 	throughput: 422 samples/sec
+Average loss at batch 2100: 0.705234, 	throughput: 493 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 11 epochs: 0.66722
+After 11 epochs: Precision: 0.69523, recall: 0.69995, F1: 0.69758
+Saved after 11 epochs in: models/methods/java-top50-model/saved_model_iter11
+Average loss at batch 2200: 0.592038, 	throughput: 421 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 12 epochs: 0.66667
+After 12 epochs: Precision: 0.69402, recall: 0.69704, F1: 0.69553
+Saved after 12 epochs in: models/methods/java-top50-model/saved_model_iter12
+Average loss at batch 2300: 0.659492, 	throughput: 391 samples/sec
+Average loss at batch 2400: 0.578988, 	throughput: 533 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 13 epochs: 0.67277
+After 13 epochs: Precision: 0.70266, recall: 0.70334, F1: 0.70300
+Saved after 13 epochs in: models/methods/java-top50-model/saved_model_iter13
+Average loss at batch 2500: 0.614508, 	throughput: 395 samples/sec
+Average loss at batch 2600: 0.561073, 	throughput: 525 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 14 epochs: 0.67166
+After 14 epochs: Precision: 0.70243, recall: 0.70141, F1: 0.70192
+Saved after 14 epochs in: models/methods/java-top50-model/saved_model_iter14
+Average loss at batch 2700: 0.591738, 	throughput: 398 samples/sec
+Average loss at batch 2800: 0.560352, 	throughput: 517 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 15 epochs: 0.67277
+After 15 epochs: Precision: 0.70252, recall: 0.70286, F1: 0.70269
+Saved after 15 epochs in: models/methods/java-top50-model/saved_model_iter15
+Average loss at batch 2900: 0.549846, 	throughput: 403 samples/sec
+Average loss at batch 3000: 0.545923, 	throughput: 512 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 16 epochs: 0.67388
+After 16 epochs: Precision: 0.70286, recall: 0.70286, F1: 0.70286
+Saved after 16 epochs in: models/methods/java-top50-model/saved_model_iter16
+Average loss at batch 3100: 0.527599, 	throughput: 405 samples/sec
+Average loss at batch 3200: 0.532514, 	throughput: 504 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 17 epochs: 0.67720
+After 17 epochs: Precision: 0.70557, recall: 0.70625, F1: 0.70591
+Saved after 17 epochs in: models/methods/java-top50-model/saved_model_iter17
+Average loss at batch 3300: 0.502131, 	throughput: 410 samples/sec
+Average loss at batch 3400: 0.529419, 	throughput: 504 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 18 epochs: 0.67610
+After 18 epochs: Precision: 0.70451, recall: 0.70383, F1: 0.70417
+Saved after 18 epochs in: models/methods/java-top50-model/saved_model_iter18
+Average loss at batch 3500: 0.484753, 	throughput: 413 samples/sec
+Average loss at batch 3600: 0.514801, 	throughput: 497 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 19 epochs: 0.67332
+After 19 epochs: Precision: 0.70325, recall: 0.70189, F1: 0.70257
+Saved after 19 epochs in: models/methods/java-top50-model/saved_model_iter19
+Average loss at batch 3700: 0.467320, 	throughput: 416 samples/sec
+Average loss at batch 3800: 0.501840, 	throughput: 494 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 20 epochs: 0.67388
+After 20 epochs: Precision: 0.70097, recall: 0.70300, F1: 0.70198
+Saved after 20 epochs in: models/methods/java-top50-model/saved_model_iter20
+Average loss at batch 3900: 0.442128, 	throughput: 419 samples/sec
+Average loss at batch 4000: 0.501898, 	throughput: 490 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 21 epochs: 0.67665
+After 21 epochs: Precision: 0.70774, recall: 0.70397, F1: 0.70585
+Saved after 21 epochs in: models/methods/java-top50-model/saved_model_iter21
+Average loss at batch 4100: 0.430376, 	throughput: 422 samples/sec
+Average loss at batch 4200: 0.503616, 	throughput: 488 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 22 epochs: 0.67443
+After 22 epochs: Precision: 0.70511, recall: 0.70203, F1: 0.70357
+Saved after 22 epochs in: models/methods/java-top50-model/saved_model_iter22
+Average loss at batch 4300: 0.422887, 	throughput: 422 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 23 epochs: 0.67610
+After 23 epochs: Precision: 0.70643, recall: 0.70334, F1: 0.70488
+Saved after 23 epochs in: models/methods/java-top50-model/saved_model_iter23
+Average loss at batch 4400: 0.472072, 	throughput: 392 samples/sec
+Average loss at batch 4500: 0.415050, 	throughput: 534 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 24 epochs: 0.67610
+After 24 epochs: Precision: 0.70746, recall: 0.70300, F1: 0.70522
+Saved after 24 epochs in: models/methods/java-top50-model/saved_model_iter24
+Average loss at batch 4600: 0.455613, 	throughput: 394 samples/sec
+Average loss at batch 4700: 0.413950, 	throughput: 527 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 25 epochs: 0.67610
+After 25 epochs: Precision: 0.70697, recall: 0.70286, F1: 0.70491
+Saved after 25 epochs in: models/methods/java-top50-model/saved_model_iter25
+Average loss at batch 4800: 0.442352, 	throughput: 398 samples/sec
+Average loss at batch 4900: 0.411542, 	throughput: 518 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 26 epochs: 0.67776
+After 26 epochs: Precision: 0.70921, recall: 0.70577, F1: 0.70748
+Saved after 26 epochs in: models/methods/java-top50-model/saved_model_iter26
+Average loss at batch 5000: 0.418734, 	throughput: 401 samples/sec
+Average loss at batch 5100: 0.418039, 	throughput: 513 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 27 epochs: 0.67277
+After 27 epochs: Precision: 0.70425, recall: 0.69947, F1: 0.70185
+Saved after 27 epochs in: models/methods/java-top50-model/saved_model_iter27
+Average loss at batch 5200: 0.409353, 	throughput: 402 samples/sec
+Average loss at batch 5300: 0.417676, 	throughput: 507 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 28 epochs: 0.67221
+After 28 epochs: Precision: 0.70473, recall: 0.69995, F1: 0.70233
+Saved after 28 epochs in: models/methods/java-top50-model/saved_model_iter28
+Average loss at batch 5400: 0.389516, 	throughput: 407 samples/sec
+Average loss at batch 5500: 0.406086, 	throughput: 503 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 29 epochs: 0.67610
+After 29 epochs: Precision: 0.70712, recall: 0.70334, F1: 0.70522
+Saved after 29 epochs in: models/methods/java-top50-model/saved_model_iter29
+Average loss at batch 5600: 0.382450, 	throughput: 413 samples/sec
+Average loss at batch 5700: 0.414106, 	throughput: 497 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 30 epochs: 0.67166
+After 30 epochs: Precision: 0.70356, recall: 0.69947, F1: 0.70151
+Saved after 30 epochs in: models/methods/java-top50-model/saved_model_iter30
+Average loss at batch 5800: 0.379374, 	throughput: 415 samples/sec
+Average loss at batch 5900: 0.400029, 	throughput: 491 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 31 epochs: 0.67554
+After 31 epochs: Precision: 0.70663, recall: 0.70286, F1: 0.70474
+Saved after 31 epochs in: models/methods/java-top50-model/saved_model_iter31
+Average loss at batch 6000: 0.361643, 	throughput: 420 samples/sec
+Average loss at batch 6100: 0.403814, 	throughput: 495 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 32 epochs: 0.67610
+After 32 epochs: Precision: 0.70864, recall: 0.70383, F1: 0.70623
+Saved after 32 epochs in: models/methods/java-top50-model/saved_model_iter32
+Average loss at batch 6200: 0.349262, 	throughput: 423 samples/sec
+Average loss at batch 6300: 0.402792, 	throughput: 490 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 33 epochs: 0.67610
+After 33 epochs: Precision: 0.70663, recall: 0.70286, F1: 0.70474
+Saved after 33 epochs in: models/methods/java-top50-model/saved_model_iter33
+Average loss at batch 6400: 0.344667, 	throughput: 422 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 34 epochs: 0.67610
+After 34 epochs: Precision: 0.70703, recall: 0.70189, F1: 0.70445
+Saved after 34 epochs in: models/methods/java-top50-model/saved_model_iter34
+Average loss at batch 6500: 0.391879, 	throughput: 393 samples/sec
+Average loss at batch 6600: 0.341804, 	throughput: 534 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 35 epochs: 0.67499
+After 35 epochs: Precision: 0.70488, recall: 0.70044, F1: 0.70265
+Saved after 35 epochs in: models/methods/java-top50-model/saved_model_iter35
+Average loss at batch 6700: 0.379509, 	throughput: 389 samples/sec
+Average loss at batch 6800: 0.347027, 	throughput: 527 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 36 epochs: 0.67554
+After 36 epochs: Precision: 0.70640, recall: 0.70092, F1: 0.70365
+Saved after 36 epochs in: models/methods/java-top50-model/saved_model_iter36
+Average loss at batch 6900: 0.371730, 	throughput: 397 samples/sec
+Average loss at batch 7000: 0.353341, 	throughput: 520 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 37 epochs: 0.67665
+After 37 epochs: Precision: 0.70807, recall: 0.70189, F1: 0.70497
+Saved after 37 epochs in: models/methods/java-top50-model/saved_model_iter37
+Average loss at batch 7100: 0.349118, 	throughput: 400 samples/sec
+Average loss at batch 7200: 0.356115, 	throughput: 513 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 38 epochs: 0.67610
+After 38 epochs: Precision: 0.70752, recall: 0.70238, F1: 0.70494
+Saved after 38 epochs in: models/methods/java-top50-model/saved_model_iter38
+Average loss at batch 7300: 0.347877, 	throughput: 403 samples/sec
+Average loss at batch 7400: 0.360137, 	throughput: 510 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 39 epochs: 0.67665
+After 39 epochs: Precision: 0.70744, recall: 0.70092, F1: 0.70416
+Saved after 39 epochs in: models/methods/java-top50-model/saved_model_iter39
+Average loss at batch 7500: 0.343817, 	throughput: 406 samples/sec
+Average loss at batch 7600: 0.349185, 	throughput: 503 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 40 epochs: 0.67776
+After 40 epochs: Precision: 0.70738, recall: 0.70189, F1: 0.70462
+Saved after 40 epochs in: models/methods/java-top50-model/saved_model_iter40
+Average loss at batch 7700: 0.335398, 	throughput: 412 samples/sec
+Average loss at batch 7800: 0.355130, 	throughput: 498 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 41 epochs: 0.67277
+After 41 epochs: Precision: 0.70338, recall: 0.69656, F1: 0.69995
+Saved after 41 epochs in: models/methods/java-top50-model/saved_model_iter41
+Average loss at batch 7900: 0.328972, 	throughput: 414 samples/sec
+Average loss at batch 8000: 0.353314, 	throughput: 491 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 42 epochs: 0.67499
+After 42 epochs: Precision: 0.70611, recall: 0.69995, F1: 0.70302
+Saved after 42 epochs in: models/methods/java-top50-model/saved_model_iter42
+Average loss at batch 8100: 0.314807, 	throughput: 417 samples/sec
+Average loss at batch 8200: 0.354708, 	throughput: 491 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 43 epochs: 0.67831
+After 43 epochs: Precision: 0.70947, recall: 0.70431, F1: 0.70688
+Saved after 43 epochs in: models/methods/java-top50-model/saved_model_iter43
+Average loss at batch 8300: 0.313558, 	throughput: 418 samples/sec
+Average loss at batch 8400: 0.362501, 	throughput: 485 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 44 epochs: 0.67720
+After 44 epochs: Precision: 0.70772, recall: 0.70189, F1: 0.70479
+Saved after 44 epochs in: models/methods/java-top50-model/saved_model_iter44
+Average loss at batch 8500: 0.310069, 	throughput: 421 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 45 epochs: 0.67499
+After 45 epochs: Precision: 0.70703, recall: 0.70189, F1: 0.70445
+Saved after 45 epochs in: models/methods/java-top50-model/saved_model_iter45
+Average loss at batch 8600: 0.351123, 	throughput: 392 samples/sec
+Average loss at batch 8700: 0.310807, 	throughput: 534 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 46 epochs: 0.67776
+After 46 epochs: Precision: 0.70766, recall: 0.70286, F1: 0.70525
+Saved after 46 epochs in: models/methods/java-top50-model/saved_model_iter46
+Average loss at batch 8800: 0.347155, 	throughput: 392 samples/sec
+Average loss at batch 8900: 0.312199, 	throughput: 528 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 47 epochs: 0.67776
+After 47 epochs: Precision: 0.70905, recall: 0.70286, F1: 0.70594
+Saved after 47 epochs in: models/methods/java-top50-model/saved_model_iter47
+Average loss at batch 9000: 0.332575, 	throughput: 396 samples/sec
+Average loss at batch 9100: 0.317153, 	throughput: 521 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 48 epochs: 0.67720
+After 48 epochs: Precision: 0.70898, recall: 0.70383, F1: 0.70640
+Saved after 48 epochs in: models/methods/java-top50-model/saved_model_iter48
+Average loss at batch 9200: 0.330229, 	throughput: 399 samples/sec
+Average loss at batch 9300: 0.322766, 	throughput: 514 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 49 epochs: 0.67610
+After 49 epochs: Precision: 0.70752, recall: 0.70238, F1: 0.70494
+Saved after 49 epochs in: models/methods/java-top50-model/saved_model_iter49
+Average loss at batch 9400: 0.317728, 	throughput: 404 samples/sec
+Average loss at batch 9500: 0.319834, 	throughput: 507 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 50 epochs: 0.67665
+After 50 epochs: Precision: 0.70660, recall: 0.70044, F1: 0.70351
+Saved after 50 epochs in: models/methods/java-top50-model/saved_model_iter50
+Average loss at batch 9600: 0.320042, 	throughput: 406 samples/sec
+Average loss at batch 9700: 0.323331, 	throughput: 502 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m2s
+Accuracy after 51 epochs: 0.67665
+After 51 epochs: Precision: 0.70689, recall: 0.70141, F1: 0.70414
+Saved after 51 epochs in: models/methods/java-top50-model/saved_model_iter51
+Saved after 51 epochs in: models/methods/java-top50-model/saved_model.final_iter51
+Model saved in file: models/methods/java-top50-model/saved_model
+Training time: 0h46m25s
+

@@ -1,0 +1,26 @@
+Extracting paths from test set...
+Finished extracting paths from test set
+Extracting paths from validation set...
+Finished extracting paths from validation set
+Extracting paths from training set...
+Finished extracting paths from training set
+Creating histograms from the training data
+subtoken vocab size:  11149
+node vocab size:  282
+target vocab size:  54
+File: data/methods/java-top50/java-top50.test.txt
+Average total contexts: 147.81125439624853
+Average final (after sampling) contexts: 86.578898007034
+Total examples: 4265
+Max number of contexts per word: 2415
+File: data/methods/java-top50/java-top50.val.txt
+Average total contexts: 220.53965612867444
+Average final (after sampling) contexts: 97.62451469772601
+Total examples: 1803
+Max number of contexts per word: 4550
+File: data/methods/java-top50/java-top50.train.txt
+Average total contexts: 247.71805658665346
+Average final (after sampling) contexts: 237.07234182958013
+Total examples: 24246
+Max number of contexts per word: 6119
+Dictionaries saved to: data/methods/java-top50/java-top50.dict.c2s
