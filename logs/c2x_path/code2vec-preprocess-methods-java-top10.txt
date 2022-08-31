@@ -1,0 +1,26 @@
+Extracting paths from test set...
+Finished extracting paths from test set
+Extracting paths from validation set...
+Finished extracting paths from validation set
+Extracting paths from training set...
+Finished extracting paths from training set
+Creating histograms from the training data
+File: data/methods/java-top10/java-top10.test.txt
+Average total contexts: 369.4630985915493
+Average final (after sampling) contexts: 147.40661971830986
+Total examples: 7100
+Empty examples: 0
+Max number of contexts per word: 8974
+File: data/methods/java-top10/java-top10.val.txt
+Average total contexts: 351.32872472141975
+Average final (after sampling) contexts: 145.7849773008667
+Total examples: 4846
+Empty examples: 0
+Max number of contexts per word: 5063
+File: data/methods/java-top10/java-top10.train.txt
+Average total contexts: 357.8917891789179
+Average final (after sampling) contexts: 148.02960296029602
+Total examples: 9999
+Empty examples: 0
+Max number of contexts per word: 10878
+Dictionaries saved to: data/methods/java-top10/java-top10.dict.c2v

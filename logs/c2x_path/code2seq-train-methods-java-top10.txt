@@ -1,0 +1,352 @@
+name: Tesla P100-PCIE-12GB
+
+Dictionaries loaded.
+Loaded subtoken vocab. size: 16129
+Loaded target word vocab. size: 17
+Loaded nodes vocab. size: 279
+Created model
+Starting training
+
+Training batch size:			 128
+Dataset path:				 data/methods/java-top10/java-top10
+Training file path:			 data/methods/java-top10/java-top10.train.c2s
+Validation path:			 data/methods/java-top10/java-top10.val.c2s
+Taking max contexts from each example:	 200
+Random path sampling:			 True
+Embedding size:				 128
+Using BiLSTMs, each of size:		 128
+Decoder size:				 320
+Decoder layers:				 1
+Max path lengths:			 9
+Max subtokens in a token:		 5
+Max target length:			 6
+Embeddings dropout keep_prob:		 0.75
+LSTM dropout keep_prob:			 0.5
+============================================
+
+Number of trainable params: 3826368
+
+Initialized variables
+Started reader...
+2021-06-29 14:42:34.896226: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m7s
+Accuracy after 1 epochs: 0.29199
+After 1 epochs: Precision: 0.48215, recall: 0.41760, F1: 0.44756
+Saved after 1 epochs in: models/methods/java-top10-model/saved_model_iter1
+Average loss at batch 100: 4.074042, 	throughput: 272 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 2 epochs: 0.69686
+After 2 epochs: Precision: 0.72226, recall: 0.76287, F1: 0.74201
+Saved after 2 epochs in: models/methods/java-top10-model/saved_model_iter2
+Average loss at batch 200: 1.298363, 	throughput: 348 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 3 epochs: 0.78395
+After 3 epochs: Precision: 0.81398, recall: 0.82557, F1: 0.81973
+Saved after 3 epochs in: models/methods/java-top10-model/saved_model_iter3
+Average loss at batch 300: 0.744077, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 4 epochs: 0.82872
+After 4 epochs: Precision: 0.85641, recall: 0.85936, F1: 0.85788
+Saved after 4 epochs in: models/methods/java-top10-model/saved_model_iter4
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 5 epochs: 0.84503
+After 5 epochs: Precision: 0.87160, recall: 0.87173, F1: 0.87167
+Saved after 5 epochs in: models/methods/java-top10-model/saved_model_iter5
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 6 epochs: 0.85741
+After 6 epochs: Precision: 0.88130, recall: 0.88295, F1: 0.88212
+Saved after 6 epochs in: models/methods/java-top10-model/saved_model_iter6
+Average loss at batch 500: 1.083977, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 7 epochs: 0.86773
+After 7 epochs: Precision: 0.88966, recall: 0.89042, F1: 0.89004
+Saved after 7 epochs in: models/methods/java-top10-model/saved_model_iter7
+Average loss at batch 600: 0.459621, 	throughput: 345 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 11 epochs: 0.87846
+After 11 epochs: Precision: 0.89907, recall: 0.90049, F1: 0.89978
+Saved after 11 epochs in: models/methods/java-top10-model/saved_model_iter11
+Average loss at batch 900: 0.781872, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 12 epochs: 0.87928
+After 12 epochs: Precision: 0.89963, recall: 0.90092, F1: 0.90027
+Saved after 12 epochs in: models/methods/java-top10-model/saved_model_iter12
+Average loss at batch 1000: 0.358794, 	throughput: 347 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 13 epochs: 0.88341
+After 13 epochs: Precision: 0.90215, recall: 0.90552, F1: 0.90383
+Saved after 13 epochs in: models/methods/java-top10-model/saved_model_iter13
+Average loss at batch 1100: 0.346996, 	throughput: 351 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 14 epochs: 0.88465
+After 14 epochs: Precision: 0.90456, recall: 0.90638, F1: 0.90547
+Saved after 14 epochs in: models/methods/java-top10-model/saved_model_iter14
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 15 epochs: 0.88527
+After 15 epochs: Precision: 0.90666, recall: 0.90509, F1: 0.90587
+Saved after 15 epochs in: models/methods/java-top10-model/saved_model_iter15
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 16 epochs: 0.88589
+After 16 epochs: Precision: 0.90757, recall: 0.90509, F1: 0.90633
+Saved after 16 epochs in: models/methods/java-top10-model/saved_model_iter16
+Average loss at batch 1300: 0.650734, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 17 epochs: 0.88795
+After 17 epochs: Precision: 0.90750, recall: 0.90854, F1: 0.90802
+Saved after 17 epochs in: models/methods/java-top10-model/saved_model_iter17
+Average loss at batch 1400: 0.306237, 	throughput: 347 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 18 epochs: 0.89125
+After 18 epochs: Precision: 0.91122, recall: 0.91070, F1: 0.91096
+Saved after 18 epochs in: models/methods/java-top10-model/saved_model_iter18
+Average loss at batch 1500: 0.297490, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 19 epochs: 0.89228
+After 19 epochs: Precision: 0.91169, recall: 0.91156, F1: 0.91163
+Saved after 19 epochs in: models/methods/java-top10-model/saved_model_iter19
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 20 epochs: 0.88857
+After 20 epochs: Precision: 0.90954, recall: 0.90797, F1: 0.90875
+Saved after 20 epochs in: models/methods/java-top10-model/saved_model_iter20
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 21 epochs: 0.89043
+After 21 epochs: Precision: 0.91132, recall: 0.91027, F1: 0.91079
+Saved after 21 epochs in: models/methods/java-top10-model/saved_model_iter21
+Average loss at batch 1700: 0.570426, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 22 epochs: 0.88857
+After 22 epochs: Precision: 0.90984, recall: 0.90840, F1: 0.90912
+Saved after 22 epochs in: models/methods/java-top10-model/saved_model_iter22
+Average loss at batch 1800: 0.277490, 	throughput: 350 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 23 epochs: 0.89084
+After 23 epochs: Precision: 0.90995, recall: 0.91113, F1: 0.91054
+Saved after 23 epochs in: models/methods/java-top10-model/saved_model_iter23
+Average loss at batch 1900: 0.270524, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 24 epochs: 0.89146
+After 24 epochs: Precision: 0.91187, recall: 0.91056, F1: 0.91121
+Saved after 24 epochs in: models/methods/java-top10-model/saved_model_iter24
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 25 epochs: 0.89063
+After 25 epochs: Precision: 0.91155, recall: 0.90998, F1: 0.91077
+Saved after 25 epochs in: models/methods/java-top10-model/saved_model_iter25
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 26 epochs: 0.89043
+After 26 epochs: Precision: 0.91125, recall: 0.90955, F1: 0.91040
+Saved after 26 epochs in: models/methods/java-top10-model/saved_model_iter26
+Average loss at batch 2100: 0.525699, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 27 epochs: 0.88981
+After 27 epochs: Precision: 0.91057, recall: 0.90926, F1: 0.90992
+Saved after 27 epochs in: models/methods/java-top10-model/saved_model_iter27
+Average loss at batch 2200: 0.251801, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 28 epochs: 0.89125
+After 28 epochs: Precision: 0.91113, recall: 0.91113, F1: 0.91113
+Saved after 28 epochs in: models/methods/java-top10-model/saved_model_iter28
+Average loss at batch 2300: 0.248222, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 29 epochs: 0.89166
+After 29 epochs: Precision: 0.91207, recall: 0.91142, F1: 0.91175
+Saved after 29 epochs in: models/methods/java-top10-model/saved_model_iter29
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 30 epochs: 0.89084
+After 30 epochs: Precision: 0.91204, recall: 0.90955, F1: 0.91079
+Saved after 30 epochs in: models/methods/java-top10-model/saved_model_iter30
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 31 epochs: 0.89125
+After 31 epochs: Precision: 0.91221, recall: 0.90998, F1: 0.91109
+Saved after 31 epochs in: models/methods/java-top10-model/saved_model_iter31
+Average loss at batch 2500: 0.488306, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 32 epochs: 0.89125
+After 32 epochs: Precision: 0.91164, recall: 0.91099, F1: 0.91131
+Saved after 32 epochs in: models/methods/java-top10-model/saved_model_iter32
+Average loss at batch 2600: 0.233818, 	throughput: 346 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 33 epochs: 0.89063
+After 33 epochs: Precision: 0.91126, recall: 0.90969, F1: 0.91048
+Saved after 33 epochs in: models/methods/java-top10-model/saved_model_iter33
+Average loss at batch 2700: 0.237984, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 34 epochs: 0.89001
+After 34 epochs: Precision: 0.91096, recall: 0.90926, F1: 0.91011
+Saved after 34 epochs in: models/methods/java-top10-model/saved_model_iter34
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 35 epochs: 0.89208
+After 35 epochs: Precision: 0.91232, recall: 0.91127, F1: 0.91180
+Saved after 35 epochs in: models/methods/java-top10-model/saved_model_iter35
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 36 epochs: 0.88981
+After 36 epochs: Precision: 0.91066, recall: 0.90883, F1: 0.90975
+Saved after 36 epochs in: models/methods/java-top10-model/saved_model_iter36
+Average loss at batch 2900: 0.464894, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 37 epochs: 0.88919
+After 37 epochs: Precision: 0.91019, recall: 0.90797, F1: 0.90908
+Saved after 37 epochs in: models/methods/java-top10-model/saved_model_iter37
+Average loss at batch 3000: 0.226172, 	throughput: 348 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 38 epochs: 0.88960
+After 38 epochs: Precision: 0.90995, recall: 0.90969, F1: 0.90982
+Saved after 38 epochs in: models/methods/java-top10-model/saved_model_iter38
+Average loss at batch 3100: 0.223702, 	throughput: 348 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 39 epochs: 0.88898
+After 39 epochs: Precision: 0.90999, recall: 0.90869, F1: 0.90934
+Saved after 39 epochs in: models/methods/java-top10-model/saved_model_iter39
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 40 epochs: 0.88877
+After 40 epochs: Precision: 0.90993, recall: 0.90797, F1: 0.90895
+Saved after 40 epochs in: models/methods/java-top10-model/saved_model_iter40
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 41 epochs: 0.88981
+After 41 epochs: Precision: 0.91157, recall: 0.90869, F1: 0.91013
+Saved after 41 epochs in: models/methods/java-top10-model/saved_model_iter41
+Average loss at batch 3300: 0.443021, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 42 epochs: 0.88857
+After 42 epochs: Precision: 0.90946, recall: 0.90854, F1: 0.90900
+Saved after 42 epochs in: models/methods/java-top10-model/saved_model_iter42
+Average loss at batch 3400: 0.214148, 	throughput: 350 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 43 epochs: 0.88857
+After 43 epochs: Precision: 0.90980, recall: 0.90797, F1: 0.90888
+Saved after 43 epochs in: models/methods/java-top10-model/saved_model_iter43
+Average loss at batch 3500: 0.218621, 	throughput: 349 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 44 epochs: 0.88877
+After 44 epochs: Precision: 0.91023, recall: 0.90840, F1: 0.90931
+Saved after 44 epochs in: models/methods/java-top10-model/saved_model_iter44
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 45 epochs: 0.88919
+After 45 epochs: Precision: 0.91037, recall: 0.90854, F1: 0.90946
+Saved after 45 epochs in: models/methods/java-top10-model/saved_model_iter45
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 46 epochs: 0.88733
+After 46 epochs: Precision: 0.90871, recall: 0.90754, F1: 0.90812
+Saved after 46 epochs in: models/methods/java-top10-model/saved_model_iter46
+Average loss at batch 3700: 0.427017, 	throughput: 156 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 47 epochs: 0.88754
+After 47 epochs: Precision: 0.90901, recall: 0.90653, F1: 0.90777
+Saved after 47 epochs in: models/methods/java-top10-model/saved_model_iter47
+Average loss at batch 3800: 0.211107, 	throughput: 350 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 48 epochs: 0.88774
+After 48 epochs: Precision: 0.90896, recall: 0.90739, F1: 0.90818
+Saved after 48 epochs in: models/methods/java-top10-model/saved_model_iter48
+Average loss at batch 3900: 0.211809, 	throughput: 350 samples/sec
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 49 epochs: 0.88816
+After 49 epochs: Precision: 0.90986, recall: 0.90725, F1: 0.90855
+Saved after 49 epochs in: models/methods/java-top10-model/saved_model_iter49
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 50 epochs: 0.88816
+After 50 epochs: Precision: 0.90923, recall: 0.90754, F1: 0.90838
+Saved after 50 epochs in: models/methods/java-top10-model/saved_model_iter50
+Finished 1 epochs
+Done testing, epoch reached
+Evaluation time: 0h0m4s
+Accuracy after 51 epochs: 0.88816
+After 51 epochs: Precision: 0.90937, recall: 0.90754, F1: 0.90845
+Saved after 51 epochs in: models/methods/java-top10-model/saved_model_iter51
+Saved after 51 epochs in: models/methods/java-top10-model/saved_model.final_iter51
+Model saved in file: models/methods/java-top10-model/saved_model
+Training time: 0h26m36s
+

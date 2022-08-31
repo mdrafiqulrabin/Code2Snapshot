@@ -1,0 +1,77 @@
+name: Tesla P100-PCIE-12GB
+
+2021-07-02 00:49:35,444 INFO     
+2021-07-02 00:49:35,444 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,444 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,444 INFO     ---------------------- Creating code2vec model ----------------------
+2021-07-02 00:49:35,444 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,444 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,444 INFO     Checking number of examples ...
+2021-07-02 00:49:35,444 INFO         Number of test examples: 7100
+2021-07-02 00:49:35,444 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,444 INFO     ----------------- Configuration - Hyper Parameters ------------------
+2021-07-02 00:49:35,444 INFO     CODE_VECTOR_SIZE                          384
+2021-07-02 00:49:35,444 INFO     CSV_BUFFER_SIZE                           104857600
+2021-07-02 00:49:35,444 INFO     DEFAULT_EMBEDDINGS_SIZE                   128
+2021-07-02 00:49:35,444 INFO     DL_FRAMEWORK                              tensorflow
+2021-07-02 00:49:35,444 INFO     DROPOUT_KEEP_RATE                         0.75
+2021-07-02 00:49:35,445 INFO     EXPORT_CODE_VECTORS                       False
+2021-07-02 00:49:35,445 INFO     LOGS_PATH                                 None
+2021-07-02 00:49:35,445 INFO     MAX_CONTEXTS                              200
+2021-07-02 00:49:35,445 INFO     MAX_PATH_VOCAB_SIZE                       911417
+2021-07-02 00:49:35,445 INFO     MAX_TARGET_VOCAB_SIZE                     261245
+2021-07-02 00:49:35,445 INFO     MAX_TOKEN_VOCAB_SIZE                      1301136
+2021-07-02 00:49:35,445 INFO     MAX_TO_KEEP                               52
+2021-07-02 00:49:35,445 INFO     MODEL_LOAD_PATH                           /scratch/deployment/code-path/code2vec/models/methods/java-top10-model/saved_model_iter4
+2021-07-02 00:49:35,445 INFO     MODEL_SAVE_PATH                           None
+2021-07-02 00:49:35,445 INFO     NUM_BATCHES_TO_LOG_PROGRESS               100
+2021-07-02 00:49:35,445 INFO     NUM_TEST_EXAMPLES                         7100
+2021-07-02 00:49:35,445 INFO     NUM_TRAIN_BATCHES_TO_EVALUATE             1800
+2021-07-02 00:49:35,445 INFO     NUM_TRAIN_EPOCHS                          51
+2021-07-02 00:49:35,445 INFO     NUM_TRAIN_EXAMPLES                        0
+2021-07-02 00:49:35,445 INFO     PATH_EMBEDDINGS_SIZE                      128
+2021-07-02 00:49:35,445 INFO     PREDICT                                   False
+2021-07-02 00:49:35,445 INFO     READER_NUM_PARALLEL_BATCHES               6
+2021-07-02 00:49:35,445 INFO     RELEASE                                   False
+2021-07-02 00:49:35,445 INFO     SAVE_EVERY_EPOCHS                         1
+2021-07-02 00:49:35,445 INFO     SAVE_T2V                                  None
+2021-07-02 00:49:35,445 INFO     SAVE_W2V                                  None
+2021-07-02 00:49:35,445 INFO     SEPARATE_OOV_AND_PAD                      False
+2021-07-02 00:49:35,445 INFO     SHUFFLE_BUFFER_SIZE                       10000
+2021-07-02 00:49:35,445 INFO     TARGET_EMBEDDINGS_SIZE                    384
+2021-07-02 00:49:35,445 INFO     TEST_BATCH_SIZE                           128
+2021-07-02 00:49:35,445 INFO     TEST_DATA_PATH                            /scratch/deployment/code-path/code2vec/data/methods/java-top10/java-top10.test.c2v
+2021-07-02 00:49:35,445 INFO     TOKEN_EMBEDDINGS_SIZE                     128
+2021-07-02 00:49:35,445 INFO     TOP_K_WORDS_CONSIDERED_DURING_PREDICTION  10
+2021-07-02 00:49:35,445 INFO     TRAIN_BATCH_SIZE                          128
+2021-07-02 00:49:35,445 INFO     TRAIN_DATA_PATH_PREFIX                    None
+2021-07-02 00:49:35,445 INFO     USE_TENSORBOARD                           False
+2021-07-02 00:49:35,445 INFO     VERBOSE_MODE                              1
+2021-07-02 00:49:35,445 INFO     _Config__logger                           <Logger code2vec (INFO)>
+2021-07-02 00:49:35,445 INFO     context_vector_size                       384
+2021-07-02 00:49:35,445 INFO     entire_model_load_path                    /scratch/deployment/code-path/code2vec/models/methods/java-top10-model/saved_model_iter4__entire-model
+2021-07-02 00:49:35,445 INFO     entire_model_save_path                    None
+2021-07-02 00:49:35,445 INFO     is_loading                                True
+2021-07-02 00:49:35,445 INFO     is_saving                                 False
+2021-07-02 00:49:35,446 INFO     is_testing                                True
+2021-07-02 00:49:35,446 INFO     is_training                               False
+2021-07-02 00:49:35,446 INFO     model_load_dir                            /scratch/deployment/code-path/code2vec/models/methods/java-top10-model
+2021-07-02 00:49:35,446 INFO     model_weights_load_path                   /scratch/deployment/code-path/code2vec/models/methods/java-top10-model/saved_model_iter4__only-weights
+2021-07-02 00:49:35,446 INFO     model_weights_save_path                   None
+2021-07-02 00:49:35,446 INFO     test_steps                                56
+2021-07-02 00:49:35,446 INFO     train_data_path                           None
+2021-07-02 00:49:35,446 INFO     train_steps_per_epoch                     0
+2021-07-02 00:49:35,446 INFO     word_freq_dict_path                       None
+2021-07-02 00:49:35,446 INFO     ---------------------------------------------------------------------
+2021-07-02 00:49:35,446 INFO     Loading model vocabularies from: `/scratch/deployment/code-path/code2vec/models/methods/java-top10-model/dictionaries.bin` ...
+2021-07-02 00:49:35,719 INFO     Done loading model vocabularies.
+2021-07-02 00:49:35,723 INFO     Done creating code2vec model
+2021-07-02 00:49:42,872 INFO     Initalized variables
+2021-07-02 00:49:42,872 INFO     Loading model weights from: /scratch/deployment/code-path/code2vec/models/methods/java-top10-model/saved_model_iter4
+2021-07-02 00:49:43,687 INFO     Done loading model weights
+2021-07-02 00:49:44,033 INFO     Starting evaluation
+2021-07-02 00:49:44.233199: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-07-02 00:49:46,047 INFO     Done evaluating, epoch reached
+2021-07-02 00:49:46,047 INFO     Evaluation time: 0H:0M:10S
+2021-07-02 00:49:46,048 INFO     top10_acc: [0.86211268 0.92577465 0.9484507  0.97338028 0.99211268 0.99661972
+ 0.99830986 0.99929577 0.99971831 0.99971831], precision: 0.8689211279117286, recall: 0.8879724368344122, F1: 0.8783434885882474
