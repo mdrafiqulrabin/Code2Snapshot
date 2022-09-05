@@ -1,0 +1,30 @@
+
+Configuration:
+
+DB_NAME = java-top10, IMG_TYPE = original
+BEST MODEL = /scratch/models/code2img/top10_original_basicNet_best.pth
+
+DataLoader:
+
+Started testloader.
+testset = #7100
+Finished testloader.
+
+Started Evaluating Test Set
+
+Accuracy for classes:
+Accuracy for class equals is: 48.82 %
+Accuracy for class main is: 48.82 %
+Accuracy for class setUp is: 54.92 %
+Accuracy for class onCreate is: 37.87 %
+Accuracy for class toString is: 47.73 %
+Accuracy for class run is: 28.37 %
+Accuracy for class hashCode is: 63.38 %
+Accuracy for class init is: 3.27 %
+Accuracy for class execute is: 38.46 %
+Accuracy for class get is: 17.31 %
+
+Overall Accuracy = 36.70 %
+
+Finished Evaluating Test Set
+
