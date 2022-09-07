@@ -6,8 +6,10 @@ IMG_TYPES = {
     "reformat_clipped": "reformat_clipped_methods",
     "reformat_literal": "reformat_literal_methods",
     "reformat_window": "reformat_window_methods",
+    "reformat": "reformat_window_methods",
     "redacted_literal": "redacted_literal_methods",
     "redacted_window": "redacted_window_methods",
+    "redacted": "redacted_window_methods"
 }
 
 DB_NAMES = {
