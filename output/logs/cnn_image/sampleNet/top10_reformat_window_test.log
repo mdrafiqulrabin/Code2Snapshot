@@ -1,0 +1,30 @@
+
+Configuration:
+
+DB_NAME = java-top10, IMG_TYPE = reformat_window
+BEST MODEL = /scratch/models/code2img/top10_reformat_window_basicNet_best.pth
+
+DataLoader:
+
+Started testloader.
+testset = #7100
+Finished testloader.
+
+Started Evaluating Test Set
+
+Accuracy for classes:
+Accuracy for class equals is: 97.08 %
+Accuracy for class main is: 98.62 %
+Accuracy for class setUp is: 85.11 %
+Accuracy for class onCreate is: 94.20 %
+Accuracy for class toString is: 89.67 %
+Accuracy for class run is: 56.10 %
+Accuracy for class hashCode is: 95.06 %
+Accuracy for class init is: 54.79 %
+Accuracy for class execute is: 42.17 %
+Accuracy for class get is: 77.61 %
+
+Overall Accuracy = 79.44 %
+
+Finished Evaluating Test Set
+
