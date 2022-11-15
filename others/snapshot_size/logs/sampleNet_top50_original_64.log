@@ -1,0 +1,199 @@
+
+DataLoader:
+
+trainset = #27119
+valset = #1803
+
+Configuration:
+
+DB_NAME = js-top50, IMG_TYPE = original, TRANS_SIZE = 64
+MAX_EPOCH = 20, BATCH_SIZE = 64
+
+device = cuda:0
+
+total_params = 157482
+total_trainable = 157482
+
+
++--------------+------------+
+|   Modules    | Parameters |
++--------------+------------+
+| conv1.weight |     36     |
+|  conv1.bias  |     4      |
+| conv2.weight |    576     |
+|  conv2.bias  |     16     |
+|  fc.weight   |   156800   |
+|   fc.bias    |     50     |
++--------------+------------+
+Total Trainable Params: 157482
+
+
+
+Started Training Model
+
+--------------------------------------------------
+time: 166.58s, epoch: 1
+train acc: 7.06, train loss: 3.70
+val acc: 2.41, val loss: 3.86
+
+Best Accuracy = 2.41 % at Epoch-1
+Saving model after best epoch-1
+--------------------------------------------------
+time: 163.18s, epoch: 2
+train acc: 8.80, train loss: 3.55
+val acc: 3.31, val loss: 3.78
+
+Best Accuracy = 3.31 % at Epoch-2
+Saving model after best epoch-2
+--------------------------------------------------
+time: 164.41s, epoch: 3
+train acc: 15.67, train loss: 3.18
+val acc: 6.07, val loss: 3.79
+
+Best Accuracy = 6.07 % at Epoch-3
+Saving model after best epoch-3
+--------------------------------------------------
+time: 172.55s, epoch: 4
+train acc: 19.09, train loss: 2.93
+val acc: 6.66, val loss: 3.91
+
+Best Accuracy = 6.66 % at Epoch-4
+Saving model after best epoch-4
+--------------------------------------------------
+time: 170.82s, epoch: 5
+train acc: 20.50, train loss: 2.81
+val acc: 6.93, val loss: 3.91
+
+Best Accuracy = 6.93 % at Epoch-5
+Saving model after best epoch-5
+--------------------------------------------------
+time: 169.57s, epoch: 6
+train acc: 21.26, train loss: 2.73
+val acc: 6.45, val loss: 3.92
+--------------------------------------------------
+time: 170.20s, epoch: 7
+train acc: 22.15, train loss: 2.68
+val acc: 5.66, val loss: 3.78
+--------------------------------------------------
+time: 171.52s, epoch: 8
+train acc: 22.67, train loss: 2.64
+val acc: 4.97, val loss: 4.13
+--------------------------------------------------
+time: 171.35s, epoch: 9
+train acc: 23.23, train loss: 2.59
+val acc: 6.72, val loss: 3.91
+--------------------------------------------------
+time: 169.07s, epoch: 10
+train acc: 23.70, train loss: 2.56
+val acc: 5.90, val loss: 3.97
+--------------------------------------------------
+time: 168.61s, epoch: 11
+train acc: 24.20, train loss: 2.53
+val acc: 7.41, val loss: 3.95
+
+Best Accuracy = 7.41 % at Epoch-11
+Saving model after best epoch-11
+--------------------------------------------------
+time: 171.04s, epoch: 12
+train acc: 24.48, train loss: 2.50
+val acc: 4.62, val loss: 4.02
+--------------------------------------------------
+time: 171.31s, epoch: 13
+train acc: 24.85, train loss: 2.47
+val acc: 5.79, val loss: 3.91
+--------------------------------------------------
+time: 170.89s, epoch: 14
+train acc: 25.26, train loss: 2.45
+val acc: 3.55, val loss: 4.09
+--------------------------------------------------
+time: 172.74s, epoch: 15
+train acc: 25.61, train loss: 2.42
+val acc: 8.17, val loss: 4.02
+
+Best Accuracy = 8.17 % at Epoch-15
+Saving model after best epoch-15
+--------------------------------------------------
+time: 171.57s, epoch: 16
+train acc: 25.78, train loss: 2.40
+val acc: 3.83, val loss: 4.41
+--------------------------------------------------
+time: 172.21s, epoch: 17
+train acc: 26.29, train loss: 2.37
+val acc: 6.24, val loss: 4.18
+--------------------------------------------------
+time: 174.69s, epoch: 18
+train acc: 26.63, train loss: 2.35
+val acc: 7.83, val loss: 4.13
+--------------------------------------------------
+time: 170.61s, epoch: 19
+train acc: 26.77, train loss: 2.32
+val acc: 5.48, val loss: 4.23
+--------------------------------------------------
+time: 169.24s, epoch: 20
+train acc: 27.22, train loss: 2.30
+val acc: 6.76, val loss: 4.15
+
+Finished Training Model
+
+
+Started Evaluating Testset
+
+Loaded best model from ./models/code2img/original/js-top50_simpleNet_best_64.pth
+testset = #4265
+
+Accuracy for classes:
+Accuracy for class accept is: 0.00 %
+Accuracy for class actionPerformed is: 0.00 %
+Accuracy for class add is: 2.60 %
+Accuracy for class apply is: 0.00 %
+Accuracy for class build is: 0.00 %
+Accuracy for class clear is: 0.00 %
+Accuracy for class clone is: 10.00 %
+Accuracy for class close is: 2.72 %
+Accuracy for class compare is: 3.49 %
+Accuracy for class compareTo is: 3.37 %
+Accuracy for class configure is: 0.00 %
+Accuracy for class create is: 6.41 %
+Accuracy for class deploy is: 0.00 %
+Accuracy for class destroy is: 0.00 %
+Accuracy for class dispose is: 0.00 %
+Accuracy for class doFix is: 0.00 %
+Accuracy for class doTest is: 0.00 %
+Accuracy for class equals is: 64.93 %
+Accuracy for class execute is: 25.93 %
+Accuracy for class foo is: 0.00 %
+Accuracy for class get is: 0.88 %
+Accuracy for class getModelAttributes is: 0.00 %
+Accuracy for class getName is: 0.74 %
+Accuracy for class hashCode is: 17.77 %
+Accuracy for class init is: 0.00 %
+Accuracy for class initData is: 0.00 %
+Accuracy for class invoke is: 0.00 %
+Accuracy for class isAvailable is: 0.00 %
+Accuracy for class main is: 37.35 %
+Accuracy for class parse is: 0.00 %
+Accuracy for class process is: 0.00 %
+Accuracy for class read is: 0.00 %
+Accuracy for class readExternal is: 0.00 %
+Accuracy for class readFrom is: 0.00 %
+Accuracy for class remove is: 0.00 %
+Accuracy for class removeAll is: 0.00 %
+Accuracy for class reset is: 2.33 %
+Accuracy for class run is: 17.00 %
+Accuracy for class setUp is: 28.71 %
+Accuracy for class setup is: 3.76 %
+Accuracy for class start is: 0.00 %
+Accuracy for class stop is: 0.00 %
+Accuracy for class tearDown is: 32.18 %
+Accuracy for class test is: 0.00 %
+Accuracy for class toString is: 3.56 %
+Accuracy for class update is: 16.67 %
+Accuracy for class validate is: 20.00 %
+Accuracy for class write is: 2.30 %
+Accuracy for class writeExternal is: 0.00 %
+Accuracy for class writeTo is: 0.00 %
+
+Overall Accuracy = 14.47 %
+
+Finished Evaluating Test Set
+

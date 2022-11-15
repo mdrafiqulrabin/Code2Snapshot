@@ -1,0 +1,193 @@
+
+DataLoader:
+
+trainset = #27119
+valset = #1803
+
+Configuration:
+
+DB_NAME = js-top50, IMG_TYPE = window, TRANS_SIZE = 1024
+MAX_EPOCH = 20, BATCH_SIZE = 64
+
+device = cuda:0
+
+total_params = 51613482
+total_trainable = 51613482
+
+
++--------------+------------+
+|   Modules    | Parameters |
++--------------+------------+
+| conv1.weight |     36     |
+|  conv1.bias  |     4      |
+| conv2.weight |    576     |
+|  conv2.bias  |     16     |
+|  fc.weight   |  51612800  |
+|   fc.bias    |     50     |
++--------------+------------+
+Total Trainable Params: 51613482
+
+
+
+Started Training Model
+
+--------------------------------------------------
+time: 681.18s, epoch: 1
+train acc: 24.81, train loss: 2.68
+val acc: 16.00, val loss: 3.41
+
+Best Accuracy = 16.00 % at Epoch-1
+Saving model after best epoch-1
+--------------------------------------------------
+time: 679.46s, epoch: 2
+train acc: 42.63, train loss: 1.32
+val acc: 17.97, val loss: 3.13
+
+Best Accuracy = 17.97 % at Epoch-2
+Saving model after best epoch-2
+--------------------------------------------------
+time: 672.11s, epoch: 3
+train acc: 49.15, train loss: 0.89
+val acc: 16.86, val loss: 2.89
+--------------------------------------------------
+time: 681.09s, epoch: 4
+train acc: 53.96, train loss: 0.60
+val acc: 16.10, val loss: 3.16
+--------------------------------------------------
+time: 733.35s, epoch: 5
+train acc: 56.96, train loss: 0.43
+val acc: 19.14, val loss: 3.30
+
+Best Accuracy = 19.14 % at Epoch-5
+Saving model after best epoch-5
+--------------------------------------------------
+time: 747.32s, epoch: 6
+train acc: 59.04, train loss: 0.31
+val acc: 19.17, val loss: 3.08
+
+Best Accuracy = 19.17 % at Epoch-6
+Saving model after best epoch-6
+--------------------------------------------------
+time: 740.29s, epoch: 7
+train acc: 60.52, train loss: 0.22
+val acc: 19.45, val loss: 3.25
+
+Best Accuracy = 19.45 % at Epoch-7
+Saving model after best epoch-7
+--------------------------------------------------
+time: 748.00s, epoch: 8
+train acc: 61.43, train loss: 0.17
+val acc: 18.52, val loss: 3.26
+--------------------------------------------------
+time: 731.71s, epoch: 9
+train acc: 62.23, train loss: 0.12
+val acc: 16.90, val loss: 3.51
+--------------------------------------------------
+time: 736.74s, epoch: 10
+train acc: 62.80, train loss: 0.09
+val acc: 17.38, val loss: 3.56
+--------------------------------------------------
+time: 750.33s, epoch: 11
+train acc: 62.89, train loss: 0.08
+val acc: 16.52, val loss: 3.59
+--------------------------------------------------
+time: 744.78s, epoch: 12
+train acc: 63.21, train loss: 0.06
+val acc: 16.83, val loss: 3.67
+--------------------------------------------------
+time: 745.82s, epoch: 13
+train acc: 63.33, train loss: 0.05
+val acc: 17.41, val loss: 3.38
+--------------------------------------------------
+time: 736.78s, epoch: 14
+train acc: 63.55, train loss: 0.04
+val acc: 18.48, val loss: 3.47
+--------------------------------------------------
+time: 734.26s, epoch: 15
+train acc: 63.67, train loss: 0.03
+val acc: 17.90, val loss: 3.69
+--------------------------------------------------
+time: 745.99s, epoch: 16
+train acc: 63.74, train loss: 0.03
+val acc: 17.21, val loss: 3.82
+--------------------------------------------------
+time: 742.08s, epoch: 17
+train acc: 63.74, train loss: 0.03
+val acc: 17.00, val loss: 4.15
+--------------------------------------------------
+time: 726.83s, epoch: 18
+train acc: 63.80, train loss: 0.02
+val acc: 16.34, val loss: 4.10
+--------------------------------------------------
+time: 726.43s, epoch: 19
+train acc: 63.79, train loss: 0.02
+val acc: 16.90, val loss: 4.06
+--------------------------------------------------
+time: 729.47s, epoch: 20
+train acc: 63.81, train loss: 0.02
+val acc: 16.52, val loss: 4.15
+
+Finished Training Model
+
+
+Started Evaluating Testset
+
+Loaded best model from ./models/code2img/window/js-top50_simpleNet_best_1024.pth
+testset = #4265
+
+Accuracy for classes:
+Accuracy for class accept is: 0.00 %
+Accuracy for class actionPerformed is: 0.00 %
+Accuracy for class add is: 18.18 %
+Accuracy for class apply is: 33.33 %
+Accuracy for class build is: 0.00 %
+Accuracy for class clear is: 4.44 %
+Accuracy for class clone is: 20.00 %
+Accuracy for class close is: 57.98 %
+Accuracy for class compare is: 39.53 %
+Accuracy for class compareTo is: 76.40 %
+Accuracy for class configure is: 4.35 %
+Accuracy for class create is: 34.62 %
+Accuracy for class deploy is: 0.00 %
+Accuracy for class destroy is: 4.76 %
+Accuracy for class dispose is: 0.00 %
+Accuracy for class doFix is: 0.00 %
+Accuracy for class doTest is: 33.33 %
+Accuracy for class equals is: 97.92 %
+Accuracy for class execute is: 11.11 %
+Accuracy for class foo is: 0.00 %
+Accuracy for class get is: 16.67 %
+Accuracy for class getModelAttributes is: 0.00 %
+Accuracy for class getName is: 2.22 %
+Accuracy for class hashCode is: 97.56 %
+Accuracy for class init is: 20.15 %
+Accuracy for class initData is: 0.00 %
+Accuracy for class invoke is: 54.55 %
+Accuracy for class isAvailable is: 16.67 %
+Accuracy for class main is: 99.22 %
+Accuracy for class parse is: 6.45 %
+Accuracy for class process is: 0.00 %
+Accuracy for class read is: 27.27 %
+Accuracy for class readExternal is: 0.00 %
+Accuracy for class readFrom is: 0.00 %
+Accuracy for class remove is: 12.00 %
+Accuracy for class removeAll is: 20.00 %
+Accuracy for class reset is: 25.58 %
+Accuracy for class run is: 41.70 %
+Accuracy for class setUp is: 80.97 %
+Accuracy for class setup is: 7.51 %
+Accuracy for class start is: 1.35 %
+Accuracy for class stop is: 3.57 %
+Accuracy for class tearDown is: 89.27 %
+Accuracy for class test is: 7.69 %
+Accuracy for class toString is: 95.84 %
+Accuracy for class update is: 0.00 %
+Accuracy for class validate is: 30.00 %
+Accuracy for class write is: 64.52 %
+Accuracy for class writeExternal is: 0.00 %
+Accuracy for class writeTo is: 16.67 %
+
+Overall Accuracy = 57.91 %
+
+Finished Evaluating Test Set
+
