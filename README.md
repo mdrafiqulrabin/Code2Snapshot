@@ -1,6 +1,6 @@
 ## Code2Snapshot (Encoding Program as Image)
 
-This repository contains the artifact of our paper [Code2Snapshot: Using Code Snapshots for Learning Representations of Source Code](https://doi.org/10.48550/arXiv.2111.01097) accepted at [ICMLA'22](https://www.icmla-conference.org/icmla22/acceptedpapers.html).
+This repository contains the artifact of our paper ``Code2Snapshot: Using Code Snapshots for Learning Representations of Source Code`` [[arXiv](https://doi.org/10.48550/arXiv.2111.01097), [IEEE Xplore](https://doi.org/10.1109/ICMLA55696.2022.00140)] accepted at [ICMLA'22](https://www.icmla-conference.org/icmla22/acceptedpapers.html).
 
 ---
 
@@ -38,7 +38,7 @@ This repository contains the artifact of our paper [Code2Snapshot: Using Code Sn
 ## Experimental Settings
 
   * Tasks: Method Name Prediction, Code Classification, Vulnerability Detection.
-  * Models:code2vec & code2seq, BiLSTM, AlexNet & ResNet.
+  * Models: code2vec & code2seq, BiLSTM, AlexNet & ResNet.
   * Datasets: JavaTop10 & JavaTop50, Java-Sort, s-bAbI.
 
 ---
@@ -53,6 +53,10 @@ This repository contains the artifact of our paper [Code2Snapshot: Using Code Sn
   title = {{Code2Snapshot}: Using Code Snapshots for Learning Representations of Source Code},
   booktitle = {Proceedings of the 21st IEEE International Conference on Machine Learning and Applications},
   year = {2022},
+  publisher = {IEEE},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1109/ICMLA55696.2022.00140},
+  doi = {10.1109/ICMLA55696.2022.00140},
   location = {Nassau, The Bahamas},
   series = {ICMLA 2022}
 }

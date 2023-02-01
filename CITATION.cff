@@ -1,0 +1,12 @@
+@inproceedings{rabin2022Code2Snapshot,
+  author = {Md Rafiqul Islam Rabin and Mohammad Amin Alipour},
+  title = {{Code2Snapshot}: Using Code Snapshots for Learning Representations of Source Code},
+  booktitle = {Proceedings of the 21st IEEE International Conference on Machine Learning and Applications},
+  year = {2022},
+  publisher = {IEEE},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1109/ICMLA55696.2022.00140},
+  doi = {10.1109/ICMLA55696.2022.00140},
+  location = {Nassau, The Bahamas},
+  series = {ICMLA 2022}
+}
